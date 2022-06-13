@@ -13,7 +13,7 @@ body{
     width: 90%;
     margin: auto;
     background-image: url("../pages/img/backx.jpg");
-    background-size: auto;
+    background-size:cover;
 }
 
 /*FIN BODY*/

@@ -485,14 +485,22 @@ header {
 
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
+
     .ul-flex{
+        padding: 15px;
         font-size: 10px;
         gap: 8px;
     }
+   
     .nav-flex{
         flex-direction: column-reverse;
         align-items: center;
         margin-bottom: 40px;
+    }
+
+    .nav-header{
+        margin: 2px;
+        padding: 2px;
     }
     
     .logo-img{

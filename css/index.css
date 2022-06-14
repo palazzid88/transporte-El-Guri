@@ -28,7 +28,7 @@ header {
 }
 
 .ul-flex{
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
     list-style-type: none;
     display: flex;
@@ -36,6 +36,20 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 40px; 
+}
+
+.nav-header{
+    padding: 10px 15px;
+    color: red;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: border 1s;
+}
+
+.nav-header:hover{
+    border-color: red;
+    color: white;
+    background-color: red;
 }
 
 .nav-flex{
@@ -61,7 +75,7 @@ header {
 }
 
 .logo-img{
-    width: 150px;
+    width: 180px;
 }
 
 /* FIN NAVEGADOR*/
@@ -125,7 +139,6 @@ header {
 
 /*LINK BTN PRESUPUESTO*/
 .presupuesto-btn{
-    font-size: 25px;
     margin: 100px;
     padding: 20px;
     background-color: aqua;
@@ -133,6 +146,16 @@ header {
     box-shadow: 6px 10px 10px black;
     align-items: center;
     text-align: center;
+}
+
+.h2-btn{
+    color: black;
+    font-size: 25px;
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+
 }
 
 /*NOTA DESCRIPCION*/
@@ -220,7 +243,7 @@ header {
     width: auto;
     background-color: aliceblue;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     gap: 20px;
     padding: 20px;    
@@ -544,4 +567,21 @@ header {
         width: 100%;
     }
 
+}
+
+@keyframes scale {
+    0% {
+        font-size: 24px;
+        color: red;
+    }
+     
+    50%{
+        font-size: 23px;
+        color: red;
+    }
+
+    100% {
+        font-size: 24px;
+        color: red;
+    }
 }

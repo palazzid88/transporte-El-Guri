@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transporte Mudanzas y elevaciones "EL Gurí"</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="..\css\index.css">
     <link rel="stylesheet" href="https://use.typekit.net/zbr8igi.css">
 </head>
@@ -12,13 +17,13 @@
     <header class="header-flex">
         <nav class="nav-flex">
             <ul class="ul-flex">
-                <li class="ul-li"><a href="..\index.html">Inicio</a></li>
-                <li class="ul-li"><a href="..\pages\mudanzas.html">Mudanzas</a></li>
-                <li class="ul-li"><a href="..\pages\izajes.html">Izajes</a></li>
-                <li class="ul-li"><a href="..\pages\nosotros.html">Nosotros</a></li>
-                <li class="ul-li"><a href="..\pages\contacto.html">Contacto</a></li>
+                <li class="ul-li"><a class="nav-header" href="..\index.html">Inicio</a></li>
+                <li class="ul-li"><a class="nav-header" href="..\pages\mudanzas.html">Mudanzas</a></li>
+                <li class="ul-li"><a class="nav-header" href="..\pages\izajes.html">Izajes</a></li>
+                <li class="ul-li"><a class="nav-header" href="..\pages\nosotros.html">Nosotros</a></li>
+                <li class="ul-li"><a class="nav-header" href="..\pages\contacto.html">Contacto</a></li>
             </ul>   
-            <div class="nav-logo">
+            <div class="nav-logo animate__animated animate__zoomIn">
                 <img src="..\pages\img\logo.svg" class="logo-img" alt="logo de la empresa">
             </div>         
         </nav>       
@@ -34,16 +39,16 @@
         <picture class="img-banner1">
             <img src="../pages/img/izajegrande.jpg" class="img-1" alt="imagen de equipo de izaje">
         </picture>       
-        <picture class="img-banner2">
+        <picture class="img-banner2" data-aos="zoom-in">
             <img src="../pages/img/izaje2.jpg" class="img-2" alt="imagen de equipo de izaje">
         </picture>
-        <picture class="img-banner3">
+        <picture class="img-banner3" data-aos="zoom-in">
             <img src="../pages/img/izaje3.jpg" class="img-3" alt="imagen de equipo de izaje">
         </picture>
-        <picture class="img-banner4">
+        <picture class="img-banner4" data-aos="zoom-in">
             <img src="../pages/img/izaje4.jpg" class="img-4" alt="imagen de equipo de izaje">
         </picture>
-        <picture class="img-banner5">
+        <picture class="img-banner5" data-aos="zoom-in">
             <img src="../pages/img/izaje5.jpg" class="img-5" alt="imagen de equipo de izaje">
         </picture>
     </section>
@@ -51,6 +56,10 @@
         <h2><a href="..\pages\contacto.html" class="h2-btn">Solicite presupuesto sin cargo aquí</a></h2>
     </div>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <footer class="footer">
         <div class="desarrollador">
             <p>

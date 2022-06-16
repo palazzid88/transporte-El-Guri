@@ -7,8 +7,9 @@
     <title>Transporte Mudanzas y elevaciones "EL Gurí"</title>
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="..\css\index.css">
     <link rel="stylesheet" href="https://use.typekit.net/zbr8igi.css">
 </head>
@@ -27,47 +28,67 @@
             </div>         
         </nav>
     </header>  
+    <h1 class="main-titulo">Envíenos su consulta</h1>
+    <h2 class="main-subtitle">Presupuesto sin cargo!</h2>
     <main class="container"> 
-        <h1 class="main-titulo">Puede contactarnos através de nuestras redes sociales:</h1>
-        <div class="main-contacto__flex">
-            <picture class="imga">
-                <a href="tel:+543364536248" class="img-call"><img src="../pages/img/callme.png"></a>
-            </picture>
-            <picture class="imga">
-                <a href="https://walink.co/0a9b85" class="img-wtp"><img src="../pages/img/wtp.png" alt="icono de whatsapp"></a>                        
-            </picture>
-            <picture class="imga">
-                <a href="https://www.facebook.com/elgurisn" class="img-fb"><img src="../pages/img/fb.png" alt="icono de facebook"></a>
-            </picture>
-            <picture class="imga">
-                <a href="https://instagram.com/elgurisn?igshid=YmMyMTA2M2Y=" class="img-insta"><img src="../pages/img/inst.png" alt="icono instagram"></a>
-            </picture>
-        </div>        
-        <section id="contacto-flex">
-            <div class="formulario">
-                <form action="post" class="post-flex">
-                    <h2 class="post.cabecera">Formulario de Presupuesto:</h2>
-                    <h4 class="post-subtitulo">Presupuesto sin cargo!</h4>
-                    <label for="identificacion">Nombre y Apellido:</label>
-                    <br>
-                    <input type="text" name="identificacion" placeholder="Juan Pérez">
-                    <br>
-                    <label for="telefono">Número de telefono:</label>
-                    <br>
-                    <input type="tel" name="telefono" placeholder="celular sin 0 y sin 15">
-                    <br>
-                    <label for="descripcion">Descripción:</label>
-                    <br>
-                    <textarea name="id" cols="30" rows="10" placeholder="Hola, quisiera consultar por..."></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-            <div class="contacto-maps">
-                <iframe class="img-mps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.0382085854!2d-60.214272285477634!3d-33.343951580804486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767806c54c533%3A0x62c9ac5f954f73c1!2sTransporte%20Mudanzas%20Elevaciones%20e%20Izajes%20%22El%20Guri%22!5e0!3m2!1ses-419!2sar!4v1652484324568!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <img src="../pages/img/whatsapp.png" class="main-wtp"  alt="icono acceso directo a whatsapp">
+        <a href="https://walink.co/0a9b85">
+            <img src="../pages/img/whatsapp.png" class="main-wtp"  alt="whatsapp">
+        </a>
+        <section class=" row justify-content-center">
+            <article class="card col-md-3 justify-content-center my-3">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Teléfono de contacto</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="celular son 0 y sin 15">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Solicitud:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Quisiera solicitar información sobre..."></textarea>
+                  </div>
+            </article>
+            <article class="card col-md-8">
+                <div class="contacto-maps">
+                    <iframe class="img-mps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.0382085854!2d-60.214272285477634!3d-33.343951580804486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767806c54c533%3A0x62c9ac5f954f73c1!2sTransporte%20Mudanzas%20Elevaciones%20e%20Izajes%20%22El%20Guri%22!5e0!3m2!1ses-419!2sar!4v1652484324568!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </section>
+
+
+        
+        <section class=" section__redes container row justify-content-center">
+            <article class="col-sm-2 col-md-3">               
+                <div class="mb-3">
+                    <picture class="imga">
+                        <a href="tel:+543364536248" class="img.call"><img class="redes" src="../pages/img/call.png"></a>
+                    </picture>
+                </div>           
+            </article>
+            <article class="col-sm-2 col-md-3">
+                <div class="mb-3">
+                    <picture class="imga">
+                        <a href="tel:+543364536248" class="img-fb"><img class="redes" src="../pages/img/facebook.png"></a>
+                    </picture>  
+                </div>
+            </article>
+            <article class="col-sm-2 col-md-3">
+                <div class="mb-3">
+                    <picture class="imga">
+                        <a href="tel:+543364536248" class="img-insta"><img class="redes" src="../pages/img/instagram.png"></a>
+                    </picture>  
+                </div>
+            </article>
+            <article class="col-sm-2 col-md-3">
+                <div class="mb-3">
+                    <picture class="imga">
+                        <a href="tel:+543364536248" class="img-call"><img  class="redes" src="../pages/img/whats.png"></a>
+                    </picture>  
+                </div>
+            </article>
+            </article>
         </section>
     </main>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <footer class="footer">
         <div class="desarrollador">
         <p>

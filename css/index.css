@@ -102,9 +102,26 @@ header {
     margin-bottom: 40px;
 }
 
+.btn{
+    color: white;
+    }
+
+.btn:hover{
+    background-color: black;
+    border: solid 1px black;
+}
+
+.main-subtitle{
+    color: white;
+    background-color: crimson;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
 .main-titulo{
     font-size: 25px;
-    margin-left: 180px;
+/*    margin-left: 180px;*/
     margin-top: 80px;
     margin-bottom: 80px;
     padding: 20px;
@@ -151,6 +168,7 @@ header {
 /*FIN GRID CONTAINER IMG*/
 
 /*LINK BTN PRESUPUESTO*/
+
 .presupuesto-btn{
     margin: 50px;
     padding: 20px;
@@ -349,7 +367,7 @@ header {
     background-color: aliceblue;
     grid-area: img5;
 }
-.img-1, .img-2, .img-3, .img-4, .img-5{
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-mps{
     width: 100%;
 }
 
@@ -384,6 +402,7 @@ header {
 
 /*### MAIN CONTACTO ###*/
 
+/*
 .main-contacto__flex{
     max-width: 1200px;
     background-color: black;
@@ -394,16 +413,30 @@ header {
     align-items: center;
     gap: 10px;
 }
-
-.img-call, .img-wtp, .img-fb, .img-insta{
-    max-width: auto;
+*/
+.redes{
+    height: 50px;
+    background-color: none;
 }
+
+.imga{
+    width: 75px;
+}
+
+.section__redes{
+    justify-content: space-around;
+    align-content: center;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: white;
+}
+/*
 .imga{
     width: 40px;
     margin: 4px;
     padding: 10px;
 }
-
+*/
 .post-flex{
     margin: auto;
     padding: 40px 0;

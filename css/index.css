@@ -22,11 +22,15 @@ body{
 /*barra de navegación común a los 5 enlaces*/
 
 header {
+    background-color: white;/*
     max-width: 1200px;
     width: 100%;
-    margin: 30px auto;
+    margin: 30px auto;*/
 }
 
+.logo{
+    width: 200px;
+}
 .ul-flex{
     font-size: 20px;
     width: auto;

@@ -1,0 +1,30 @@
+/*INICIO BODY */
+
+body{
+    width: 100%;
+    margin: auto;
+    background-image: url("../pages/img/backx.jpg");
+    background-size:cover;
+}
+
+/*FIN BODY*/
+
+/*INICIO FLEX NAVEGADOR*/
+/*barra de navegación común a los 5 enlaces*/
+
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ul-flex{
+    font-size: 20px;
+    width: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px; 
+}

@@ -22,10 +22,7 @@ body{
 /*barra de navegación común a los 5 enlaces*/
 
 header {
-    background-color: white;/*
-    max-width: 1200px;
-    width: 100%;
-    margin: 30px auto;*/
+    background-color: white;
 }
 
 .logo{
@@ -125,7 +122,6 @@ header {
 
 .main-titulo{
     font-size: 25px;
-/*    margin-left: 180px;*/
     margin-top: 80px;
     margin-bottom: 80px;
     padding: 20px;
@@ -183,15 +179,6 @@ header {
     text-align: center;
 }
 
-/*
-.h2-btn{
-    color: black;
-    font-size: 25px;
-    animation-name: scale;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-*/
 
 /*NOTA DESCRIPCION*/
 
@@ -406,18 +393,7 @@ header {
 
 /*### MAIN CONTACTO ###*/
 
-/*
-.main-contacto__flex{
-    max-width: 1200px;
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-}
-*/
+
 .redes{
     height: 50px;
     background-color: none;
@@ -434,13 +410,7 @@ header {
     padding: 10px;
     background-color: white;
 }
-/*
-.imga{
-    width: 40px;
-    margin: 4px;
-    padding: 10px;
-}
-*/
+
 .post-flex{
     margin: auto;
     padding: 40px 0;

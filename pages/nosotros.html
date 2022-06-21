@@ -7,29 +7,37 @@
     <title>Transporte Mudanzas y elevaciones "EL Gurí"</title>
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="..\css\index.css">
     <link rel="stylesheet" href="https://use.typekit.net/zbr8igi.css">
 </head>
 <body id="body-nosotros"> 
-    <header class="header-flex">
-        <nav class="nav-flex">
-            <ul class="ul-flex">
-                <li class="ul-li"><a class="nav-header" href="..\index.html">Inicio</a></li>
-                <li class="ul-li"><a class="nav-header" href="..\pages\mudanzas.html">Mudanzas</a></li>
-                <li class="ul-li"><a class="nav-header" href="..\pages\izajes.html">Izajes</a></li>
-                <li class="ul-li"><a class="nav-header" href="..\pages\nosotros.html">Nosotros</a></li>
-                <li class="ul-li"><a class="nav-header" href="..\pages\contacto.html">Contacto</a></li>
-            </ul>   
-            <div class="nav-logo animate__animated animate__zoomIn">
-                <img src="..\pages\img\logo.svg" class="logo-img" alt="logo de la empresa">
-            </div>   
-        </nav>
-    </header>
+    <header>
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <img href="./index.html" class="navbar-brand logo" src="..\pages\img\logo.svg" class="img-logo">
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav ms-3">
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/mudanzas.html">Mudanzas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/izajes.html">Izajes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                </ul>|
+              </div>
+            </div>
+          </nav>
+        </div>      
+    </header> 
+    <h1 class="main-titulo">Sobre Nosotros</h1>
     <main class="main-nosotros__flex">
-        <div class="nosotros-cabecera__flex">
-            <h1 class="main-titulo">Sobre Nosotros</h1>
+        <div class="nosotros-cabecera__flex">            
             <h2 class="main-subtitulo">
                 Una empresa familiar con mas de 15 años de experiencia en el rubro
             </h2>
@@ -45,6 +53,8 @@
             <img class="nosotros-img" src="..\pages\img\dibu3.jpg">
         </div>
      </main>
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <footer class="footer">
             <div class="desarrollador">
             <p>

@@ -22,11 +22,12 @@ body{
 /*barra de navegación común a los 5 enlaces*/
 
 header {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    background-color: white;
 }
 
+.logo{
+    width: 200px;
+}
 .ul-flex{
     font-size: 20px;
     width: auto;
@@ -82,16 +83,45 @@ header {
 
 /* INICIO.HTML MAIN CONTAINER*/
 
-.main-container{
+.container{
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
+.carousel-boot{
+    margin-top: 60px;
+    max-width: 650px;
+}
+
+.card{
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn-boot{
+    margin-bottom: 40px;
+}
+
+.btn{
+    color: white;
+    }
+
+.btn:hover{
+    background-color: black;
+    border: solid 1px black;
+}
+
+.main-subtitle{
+    color: white;
+    background-color: crimson;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
 
 .main-titulo{
     font-size: 25px;
-    margin-left: 180px;
     margin-top: 80px;
     margin-bottom: 80px;
     padding: 20px;
@@ -138,8 +168,9 @@ header {
 /*FIN GRID CONTAINER IMG*/
 
 /*LINK BTN PRESUPUESTO*/
+
 .presupuesto-btn{
-    margin: 100px;
+    margin: 50px;
     padding: 20px;
     background-color: aqua;
     border: solid 1px aqua;
@@ -148,15 +179,6 @@ header {
     text-align: center;
 }
 
-.h2-btn{
-    color: black;
-    font-size: 25px;
-    animation-name: scale;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-
-
-}
 
 /*NOTA DESCRIPCION*/
 
@@ -336,7 +358,7 @@ header {
     background-color: aliceblue;
     grid-area: img5;
 }
-.img-1, .img-2, .img-3, .img-4, .img-5{
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-mps{
     width: 100%;
 }
 
@@ -371,24 +393,22 @@ header {
 
 /*### MAIN CONTACTO ###*/
 
-.main-contacto__flex{
-    max-width: 1200px;
-    background-color: black;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
+
+.redes{
+    height: 50px;
+    background-color: none;
 }
 
-.img-call, .img-wtp, .img-fb, .img-insta{
-    max-width: auto;
-}
 .imga{
-    width: 40px;
-    margin: 4px;
+    width: 75px;
+}
+
+.section__redes{
+    justify-content: space-around;
+    align-content: center;
+    margin: 40px auto;
     padding: 10px;
+    background-color: white;
 }
 
 .post-flex{

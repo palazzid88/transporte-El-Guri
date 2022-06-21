@@ -7,43 +7,78 @@
     <title>Transporte Mudanzas y elevaciones "EL Gurí"</title>
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href=".\css\index.css">
     <link rel="stylesheet" href="https://use.typekit.net/zbr8igi.css">
     <link href="http://fonts.cdnfonts.com/css/nimbus-sans-l" rel="stylesheet">
 </head>
 <body>
-    <header class="header-flex">
-        <nav class="nav-flex">
-            <ul class="ul-flex">
-                <li class="ul-li"><a class="nav-header" href=".\index.html">Inicio</a></li>
-                <li class="ul-li"><a class="nav-header" href=".\pages\mudanzas.html">Mudanzas</a></li>
-                <li class="ul-li"><a class="nav-header" href=".\pages\izajes.html">Izajes</a></li>
-                <li class="ul-li"><a class="nav-header" href=".\pages\nosotros.html">Nosotros</a></li>
-                <li class="ul-li"><a class="nav-header" href=".\pages\contacto.html">Contacto</a></li>
-            </ul>   
-            <picture class="nav-logo animate__animated animate__zoomIn">
-                <img src=".\pages\img\logo.svg" class="logo-img" alt="logo de la empresa">
-            </div>         
-        </nav>       
-    </header>  
-    <main class="main-container">  
-            <a href="https://walink.co/0a9b85" ><img class="main-wtp" src="./pages/img/whatsapp.png"></a>
-        <h1 class="main-titulo">-Mudanzas e izajes a cualquier punto del país-</h1>
-        <div class="grid-container">
-            <img src=".\pages\img\Maskgroup-1.jpg" data-aos="flip-up" class="main-img" alt="imagen del camión visto de perfil">
-            <img src=".\pages\img\Maskgroup-2.jpg" data-aos="flip-up" class="main-img" alt="imagen del camión en con el sol de fondo">
-            <img src=".\pages\img\Maskgroup-3.jpg" data-aos="flip-up" class="main-img" alt="imagen del camión en un día con neblina">
-            <img src=".\pages\img\Maskgroup-4.jpg" data-aos="flip-up" class="main-img" alt="imagen del camión desde atrás">
-            <img src=".\pages\img\Maskgroup-5.jpg" data-aos="flip-up" class="main-img" alt="imagen del camión sobre un fondo de montañas">
-             <img src=".\pages\img\Maskgroup-6.jpg" data-aos="flip-up" class="main-img" alt="imagen del camión con una vivienda de fondo">
-        </div>            
-        <div class="div-btn">
-                    <h2 class="presupuesto-btn"><a href=".\pages\contacto.html" class="h2-btn">Solicite presupuesto sin cargo aquí</a></h2>
-        </div>                       
+    <header>
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+              <img href="./index.html" class="navbar-brand logo" src=".\pages\img\logo.svg" class="img-logo">
+              <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav ms-3">
+                  <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./pages/mudanzas.html">Mudanzas</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./pages/izajes.html">Izajes</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>|
+              </div>
+            </div>
+          </nav>
+        </div>      
+    </header>
+    <a href="https://walink.co/0a9b85" ><img class="main-wtp" src="./pages/img/whatsapp.png"></a>
+    <h1 class="main-titulo">-Mudanzas e izajes a cualquier punto del país-</h1>    
+    <main class="container  carousel-boot">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./pages/img/Maskgroup-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./pages/img/Maskgroup-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./pages/img/Maskgroup-3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./pages/img/Maskgroup-4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./pages/img/Maskgroup-5.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./pages/img/Maskgroup-6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>  
+      <div class="container">
+        <h2 class="main-subtitle">Solicite presupuesto sin cargo</h2>
+        <section class="container row justify-content-center">
+            <div class="d-grid gap-2 col-5 btn-boot">
+                <button class="btn btn-primary" type="button"><a href="..\pages\contacto.html" class="btn">Click aquí</a></button>
+            </div>                    
     </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

@@ -21,6 +21,8 @@ body{
 /*INICIO FLEX NAVEGADOR*/
 /*barra de navegación común a los 5 enlaces*/
 
+
+
 header {
     background-color: white;
 }
@@ -28,6 +30,8 @@ header {
 .logo{
     width: 200px;
 }
+/*
+
 .ul-flex{
     font-size: 20px;
     width: auto;
@@ -47,11 +51,13 @@ header {
     transition: border 1s;
 }
 
+
 .nav-header:hover{
     border-color: red;
     color: white;
     background-color: red;
 }
+
 
 .nav-flex{
     max-width: 1200px;
@@ -66,7 +72,7 @@ header {
     border-bottom: 1px solid grey;
     box-shadow: 0px 10px 10px black;
 }
-
+*/
 .ul-li{
     max-width: 50%;
 }

@@ -1,8 +1,34 @@
 
+    /*HEADER*/
 header {
     background-color: white;
-}
-
-.logo{
+    .header-nav{
+    max-width: 1200px;
+    }
+    .nav__logo{
     width: 200px;
-}
+    }
+    .nav__ul{
+        .ul__li{
+            .nav__item{
+                margin: 10px;
+            }
+            .nav__link{ 
+                color: grey;
+                font-size: medium;
+               /* margin: 10px, 25px;*/
+                padding: 10px 6px;
+                color: red;
+                border: 3px solid white;
+                border-radius: 10px;
+                transition: border 1s;
+            }
+            .nav__link:hover{
+                border-color: red;
+                color: white;
+                background-color: red;
+            }
+        }
+
+    }
+}   

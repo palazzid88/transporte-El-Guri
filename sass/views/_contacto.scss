@@ -1,19 +1,22 @@
 /*### MAIN CONTACTO ###*/
 
 
-.redes{
-    height: 50px;
-    background-color: none;
-}
-
-.imga{
-    width: 75px;
-}
-
 .section__redes{
-    justify-content: space-around;
-    align-content: center;
-    margin: 40px auto;
+    margin: 50px;
     padding: 10px;
     background-color: white;
+    justify-content: space-around;
+    .article__redes{
+        margin: auto;
+        max-width: 100%;
+        .redes__img{
+            max-width: 100%;
+            .redes{
+                height: 80px;
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+    }
 }

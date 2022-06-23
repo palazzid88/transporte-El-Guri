@@ -10,32 +10,29 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
      <!-- CSS only -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="..\css\index.css">
+    <link rel="stylesheet" href="..\css\translated.css">
     <link rel="stylesheet" href="https://use.typekit.net/zbr8igi.css">
 </head>
 <body id="body-contacto">
-    <header class="header-flex">
-        <header>
+    <header class="header">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-              <nav class="navbar navbar-expand-md">
-                <div class="container-fluid">
-                  <img href="./index.html" class="navbar-brand logo" src="..\pages\img\logo.svg" class="img-logo">
-                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                <img href="./index.html" class="navbar-brand nav__logo" src="..\pages\img\logo.svg" class="img-logo">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end">
-                    <ul class="navbar-nav ms-3">
-                      <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/mudanzas.html">Mudanzas</a></li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/izajes.html">Izajes</a></li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/nosotros.html">Nosotros</a></li>
-                      <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                </button>
+                <div id="MenuNavegacion" class="collapse navbar-collapse justify-content-end nav__ul">
+                    <ul class="navbar-nav ms-3 ul__li">
+                        <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                        <li class="nav__item"><a class="nav__link" href="../pages/mudanzas.html">Mudanzas</a></li>
+                        <li class="nav__item"><a class="nav__link" href="../pages/izajes.html">Izajes</a></li>
+                        <li class="nav__item"><a class="nav__link" href="../pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav__item"><a class="nav__link" href="../pages/contacto.html">Contacto</a></li>
                     </ul>|
-                  </div>
                 </div>
-              </nav>
-            </div>      
-        </header>  
+            </div>
+        </nav>
+    </header>  
     <h1 class="main-titulo">Envíenos su consulta</h1>
     <h2 class="main-subtitle">Presupuesto sin cargo!</h2>
     <main class="container"> 
@@ -43,52 +40,45 @@
         <a href="https://walink.co/0a9b85">
             <img src="../pages/img/whatsapp.png" class="main-wtp"  alt="whatsapp">
         </a>
-        <section class=" row justify-content-center">
-            <article class="card col-md-3 justify-content-center my-3">
+        <section class=" row justify-content-center contact">
+            <article class="card col-md-3 justify-content-center my-3 contact__form">
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Teléfono de contacto</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="celular son 0 y sin 15">
+                    <label for="exampleFormControlInput1" class="form__label">Teléfono de contacto</label>
+                    <input type="telephone" class="form-control form__tel" id="exampleFormControlInput1" placeholder="celular son 0 y sin 15">
                   </div>
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Solicitud:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Quisiera solicitar información sobre..."></textarea>
+                    <label for="exampleFormControlTextarea1" class="form__label">Solicitud:</label>
+                    <textarea class="form-control form__txt" id="exampleFormControlTextarea1" rows="6" placeholder="Quisiera solicitar información sobre..."></textarea>
                   </div>
             </article>
-            <article class="card col-md-8">
+            <article class="card col-md-8 contact__maps">
                 <div class="contacto-maps">
                     <iframe class="img-mps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.0382085854!2d-60.214272285477634!3d-33.343951580804486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b767806c54c533%3A0x62c9ac5f954f73c1!2sTransporte%20Mudanzas%20Elevaciones%20e%20Izajes%20%22El%20Guri%22!5e0!3m2!1ses-419!2sar!4v1652484324568!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </article>
-        </section>
-
-
-        
-        <section class=" section__redes container row justify-content-center">
-            <article class="col-sm-2 col-md-3">               
-                <div class="mb-3">
-                    <picture class="imga">
+        </section>        
+        <section class=" section__redes container row">
+            <article class="col-sm-2 col-md-2 article__redes">               
+                    <picture class="mb-3 redes__img">
                         <a href="tel:+543364536248" class="img.call"><img class="redes" src="../pages/img/call.png"></a>
                     </picture>
-                </div>           
             </article>
-            <article class="col-sm-2 col-md-3">
-                <div class="mb-3">
-                    <picture class="imga">
+            <article class="col-sm-2 col-md-2 article__redes">
+                    <picture class="mb-3 redes__img">
                         <a href="https://es-la.facebook.com/elgurisn/" class="img-fb"><img class="redes" src="../pages/img/facebook.png"></a>
                     </picture>  
                 </div>
             </article>
-            <article class="col-sm-2 col-md-3">
-                <div class="mb-3">
-                    <picture class="imga">
+            <article class="col-sm-2 col-md-2 article__redes">
+                    <picture class="mb-3 redes__img">
                         <a href="https://www.instagram.com/invites/contact/?i=1nnmzy1zebipm&utm_content=gg8416b" class="img-insta"><img class="redes" src="../pages/img/instagram.png"></a>
                     </picture>  
                 </div>
             </article>
-            <article class="col-sm-2 col-md-3">
+            <article class="col-sm-2 col-md-2 article__redes">
                 <div class="mb-3">
-                    <picture class="imga">
-                        <a href="https://bit.ly/2MogCC5" class="img-call"><img  class="redes" src="../pages/img/whats.png"></a>
+                    <picture class="mb-3 redes__img">
+                        <a href="https://bit.ly/2MogCC5" class="img-wtp"><img  class="redes" src="../pages/img/whats.png"></a>
                     </picture>  
                 </div>
             </article>

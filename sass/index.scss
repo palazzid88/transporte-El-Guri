@@ -2,7 +2,6 @@
 @import './misc/normalize';
 @import './misc/variables';
 @import './misc/mixins';
-@import './misc/media';
 
 /*PARTIALS*/
 @import './partials/header';
@@ -13,4 +12,7 @@
 @import './views/mudanzas';
 @import './views/izajes';
 @import './views/nosotros';
-@import './views/nosotros';
+@import './views/contacto';
+
+@import './misc/media';
+

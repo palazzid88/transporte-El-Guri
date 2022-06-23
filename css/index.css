@@ -25,6 +25,8 @@ body{
 
 header {
     background-color: white;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo{
@@ -155,7 +157,7 @@ header {
     border: solid white 5px;
 }
 
-/*INICIO GRID CONTAINER IMG*/
+/*INICIO GRID CONTAINER IMG
 
 .grid-container{
     width: 100%;
@@ -170,11 +172,12 @@ header {
     flex-grow: 1;
     
 }
+*/
 
 /*FIN GRID CONTAINER IMG*/
 
 /*LINK BTN PRESUPUESTO*/
-
+/*
 .presupuesto-btn{
     margin: 50px;
     padding: 20px;
@@ -184,10 +187,10 @@ header {
     align-items: center;
     text-align: center;
 }
-
+*/
 
 /*NOTA DESCRIPCION*/
-
+/*
 .nota{
     background-color: aliceblue;
     width: 90%;
@@ -199,7 +202,7 @@ header {
     align-items: center;
     text-align: center;
 }
-
+*/
 /*GRID NOTA DESCRIPCION*/
 
 .grid-nota{
@@ -236,17 +239,27 @@ header {
 
 
 /* ###  mudanzas.html ### */
-
+/*
 .main-mudanza{
     max-width: 1200px;
     margin: 0 auto;
 }
-
+*/
 .picture-img{
     width: 100%;
 }
+/*
 
-.section-article1{
+.article-mudanza, .card{
+    margin: 10px;
+    padding: 10px;
+
+}
+.card{
+
+}
+
+    /*
     width: auto;
     background-color: aliceblue;
     display: flex;
@@ -255,7 +268,7 @@ header {
     gap: 20px;
     padding: 20px;
 }
-
+/*
 .section-article2{
     width: auto;
     background-color: aliceblue;
@@ -306,7 +319,7 @@ header {
     color: black;
     margin: 10px;
 }
-
+*/
 
 /*## IZAJE.HTML ##*/
 
@@ -416,7 +429,7 @@ header {
     padding: 10px;
     background-color: white;
 }
-
+/*
 .post-flex{
     margin: auto;
     padding: 40px 0;
@@ -440,7 +453,7 @@ header {
 .post-subtitulo{
     color: red;
 }
-
+*/
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 680px) and (max-width: 840px) {

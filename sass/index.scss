@@ -1,30 +1,16 @@
-/*INICIO BODY */
+/*MISC*/
+@import './misc/normalize';
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/media';
 
-body{
-    width: 100%;
-    margin: auto;
-    background-image: url("../pages/img/backx.jpg");
-    background-size:cover;
-}
+/*PARTIALS*/
+@import './partials/header';
+@import './partials/footer';
 
-/*FIN BODY*/
-
-/*INICIO FLEX NAVEGADOR*/
-/*barra de navegación común a los 5 enlaces*/
-
-header {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.ul-flex{
-    font-size: 20px;
-    width: auto;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 40px; 
-}
+/*VIEWS*/
+@import './views/inicio';
+@import './views/mudanzas';
+@import './views/izajes';
+@import './views/nosotros';
+@import './views/nosotros';

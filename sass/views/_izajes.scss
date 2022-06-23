@@ -1,0 +1,59 @@
+/*## IZAJE.HTML ##*/
+
+.main-izaje{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.grid-banner{
+    width: 100%;
+    padding: 10px;
+    background-color: aliceblue;
+    display: grid;   
+    grid-template-areas: 
+
+    "img1 img1 img2"
+    "img1 img1 img3"
+    "img1 img1 img4"
+    "img1 img1 img5";
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-banner1{
+    width: 100%;
+    background-color: aliceblue;
+    grid-area: img1;
+}
+
+.img-banner2{
+    width: 100%;
+    background-color: aliceblue;
+    grid-area: img2;
+}
+
+.img-banner3{
+    width: 100%;
+    background-color: aliceblue;
+    grid-area: img3;
+}
+
+.img-banner4{
+    width: 100%;
+    background-color: aliceblue;
+    grid-area: img4;
+}
+
+.img-banner5{
+    width: 100%;
+    background-color: aliceblue;
+    grid-area: img5;
+}
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-mps{
+    width: 100%;
+}

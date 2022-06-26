@@ -16,40 +16,40 @@
 }
 
 .card{
-    margin: 10px;
-    padding: 10px;
+    margin: $small;
+    padding: $small;
 }
 
 .btn-boot{
-    margin-bottom: 40px;
+    margin-bottom: $xlargue;
 }
 
 .btn{
-    color: white;
+    color: $color-secundary;
     }
 
 .btn:hover{
-    background-color: black;
-    border: solid 1px black;
+    background-color: $color-footer;
+    border: solid 1px $color-footer;
 }
 
-.main-subtitle
+.main-subtitulo
 {
-    color: white;
-    background-color: crimson;
-    margin: 30px;
-    padding: 10px;
+    color: $color-secundary;
+    background-color: $color-primary;
+    margin: $xlargue;
+    padding: $small;
     text-align: center;
     }
 
     .main-titulo
 {
-    font-size: 25px;
+    font-size: $font-size-h1;
     margin-top: 80px;
     margin-bottom: 80px;
-    padding: 20px;
+    padding: $largue;
     background: linear-gradient(to left, red, white);
-    border-radius: 10px;
+    border-radius: $small;
     box-shadow: 6px 10px 10px black;
     text-align: center;
 }

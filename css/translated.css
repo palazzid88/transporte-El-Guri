@@ -12,6 +12,8 @@ body {
   background-image: url("../pages/img/backx.jpg");
   background-size: cover; }
 
+/*VARIABLES*/
+/*Margin & padding & gap*/
 /*PARTIALS*/
 /*HEADER*/
 header {
@@ -23,13 +25,11 @@ header {
   header .nav__ul .ul__li .nav__item {
     margin: 10px; }
   header .nav__ul .ul__li .nav__link {
-    color: grey;
-    font-size: medium;
-    /* margin: 10px, 25px;*/
-    padding: 10px 6px;
+    font-size: 15px;
+    padding: 5px;
     color: red;
     border: 3px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: border 1s; }
   header .nav__ul .ul__li .nav__link:hover {
     border-color: red;
@@ -39,13 +39,14 @@ header {
 /*FOOTER*/
 .footer {
   max-width: 1200px;
+  font-size: 12px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 20px;
   background-color: black;
-  color: aliceblue;
+  color: white;
   text-align: center; }
 
 /*VIEWS*/
@@ -77,15 +78,15 @@ header {
   background-color: black;
   border: solid 1px black; }
 
-.main-subtitle {
+.main-subtitulo {
   color: white;
-  background-color: crimson;
-  margin: 30px;
+  background-color: red;
+  margin: 40px;
   padding: 10px;
   text-align: center; }
 
 .main-titulo {
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 20px;
@@ -116,26 +117,27 @@ header {
   transition: height 1s; }
 
 /* ###  mudanzas.html ### */
-#container .article-mudanza .card .card-img .picture-img {
-  width: 100%; }
-
-#container .article-mudanza .card .servicios-article .title-article {
-  color: black;
-  font-size: 32px;
-  margin: 10px;
-  padding: 10px; }
-
-#container .article-mudanza .card .servicios-article .subtitle-article {
-  color: red;
-  font-size: 20px;
-  margin: 10px;
-  padding: 10px; }
-
-#container .article-mudanza .card .servicios-article .parraph-article {
-  color: black;
-  font-size: 15px;
-  margin: 10px;
-  padding: 10px; }
+#container .article-mudanza {
+  max-width: 95%;
+  justify-content: center;
+  margin: auto; }
+  #container .article-mudanza .card .card-img .picture-img {
+    width: 100%; }
+  #container .article-mudanza .card .servicios-article .title-article {
+    color: black;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px; }
+  #container .article-mudanza .card .servicios-article .subtitle-article {
+    color: red;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px; }
+  #container .article-mudanza .card .servicios-article .parraph-article {
+    color: black;
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px; }
 
 /*## IZAJE.HTML ##*/
 .main-izaje {
@@ -145,7 +147,7 @@ header {
 .grid-banner {
   width: 100%;
   padding: 10px;
-  background-color: aliceblue;
+  background-color: white;
   display: grid;
   grid-template-areas: "img1 img1 img2" "img1 img1 img3" "img1 img1 img4" "img1 img1 img5";
   grid-template-columns: auto auto auto;
@@ -156,27 +158,27 @@ header {
 
 .img-banner1 {
   width: 100%;
-  background-color: aliceblue;
+  background-color: white;
   grid-area: img1; }
 
 .img-banner2 {
   width: 100%;
-  background-color: aliceblue;
+  background-color: white;
   grid-area: img2; }
 
 .img-banner3 {
   width: 100%;
-  background-color: aliceblue;
+  background-color: white;
   grid-area: img3; }
 
 .img-banner4 {
   width: 100%;
-  background-color: aliceblue;
+  background-color: white;
   grid-area: img4; }
 
 .img-banner5 {
   width: 100%;
-  background-color: aliceblue;
+  background-color: white;
   grid-area: img5; }
 
 .img-1, .img-2, .img-3, .img-4, .img-5, .img-mps {
@@ -207,7 +209,7 @@ header {
 
 /*### MAIN CONTACTO ###*/
 .section__redes {
-  margin: 50px;
+  margin: 40px;
   padding: 10px;
   background-color: white;
   justify-content: space-around; }
@@ -218,15 +220,15 @@ header {
       max-width: 100%; }
       .section__redes .article__redes .redes__img .redes {
         height: 80px;
-        margin: 10px;
-        padding: 10px; }
+        margin: 5px;
+        padding: 5px; }
 
 @media screen and (min-width: 680px) and (max-width: 840px) {
   .ul-flex {
-    font-size: 18px;
+    font-size: 20px;
     gap: 10px; }
   .main-titulo {
-    font-size: 18px; }
+    font-size: 20px; }
   .grid-container {
     width: 100%;
     margin: 0 auto;
@@ -246,15 +248,15 @@ header {
 
 @media screen and (min-width: 480px) and (max-width: 679px) {
   .ul-flex {
-    font-size: 12px;
-    gap: 8px; }
+    font-size: 15px;
+    gap: 10px; }
   .nav-flex {
     font-size: 15px;
     flex-direction: column-reverse;
     align-items: center;
     margin-bottom: 40px; }
   .main-titulo {
-    font-size: 12px; }
+    font-size: 15px; }
   .grid-container {
     width: 100%;
     margin: 0 auto;
@@ -273,7 +275,7 @@ header {
   .ul-flex {
     padding: 15px 0px;
     font-size: 10px;
-    gap: 8px; }
+    gap: 5px; }
   .nav-flex {
     flex-direction: column-reverse;
     align-items: center;
@@ -284,11 +286,11 @@ header {
   .logo-img {
     width: 100px; }
   .main-titulo {
-    font-size: 8px;
+    font-size: 30px;
     padding: 10px;
-    margin: 40px; }
+    margin: 20px; }
   .presupuesto-btn {
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 10px; }
   .h2-btn {
     font-size: 10px; }
@@ -307,11 +309,11 @@ header {
     position: fixed;
     left: 70%;
     top: 85%; }
-  h2, .main-subtitulo {
-    font-size: 12px;
+  .main-subtitulo {
+    font-size: 15px;
     padding: 10px;
     text-align: center;
-    color: red; }
+    color: white; }
   p, .main-parrafo {
     font-size: 8px;
     padding: 10px;

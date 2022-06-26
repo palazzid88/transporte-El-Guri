@@ -8,8 +8,8 @@
 
 .grid-banner{
     width: 100%;
-    padding: 10px;
-    background-color: aliceblue;
+    padding: $small;
+    background-color: $color-secundary;
     display: grid;   
     grid-template-areas: 
 
@@ -22,36 +22,36 @@
     grid-template-rows: auto auto auto auto;
     justify-items: center;
     align-items: center;
-    gap: 10px;
+    gap: $small;
 }
 
 .img-banner1{
     width: 100%;
-    background-color: aliceblue;
+    background-color: $color-secundary;
     grid-area: img1;
 }
 
 .img-banner2{
     width: 100%;
-    background-color: aliceblue;
+    background-color: $color-secundary;
     grid-area: img2;
 }
 
 .img-banner3{
     width: 100%;
-    background-color: aliceblue;
+    background-color: $color-secundary;
     grid-area: img3;
 }
 
 .img-banner4{
     width: 100%;
-    background-color: aliceblue;
+    background-color: $color-secundary;
     grid-area: img4;
 }
 
 .img-banner5{
     width: 100%;
-    background-color: aliceblue;
+    background-color: $color-secundary;
     grid-area: img5;
 }
 .img-1, .img-2, .img-3, .img-4, .img-5, .img-mps{

@@ -11,22 +11,20 @@ header {
     .nav__ul{
         .ul__li{
             .nav__item{
-                margin: 10px;
+                margin: $small;
             }
             .nav__link{ 
-                color: grey;
-                font-size: medium;
-               /* margin: 10px, 25px;*/
-                padding: 10px 6px;
-                color: red;
+                font-size: $medium;
+                padding: $xsmall;
+                color: $color-primary;
                 border: 3px solid white;
-                border-radius: 10px;
+                border-radius: $xsmall;
                 transition: border 1s;
             }
             .nav__link:hover{
-                border-color: red;
-                color: white;
-                background-color: red;
+                border-color: $color-primary;
+                color: $font-color2;
+                background-color: $color-primary;
             }
         }
 

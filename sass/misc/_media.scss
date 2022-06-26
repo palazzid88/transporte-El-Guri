@@ -1,10 +1,10 @@
 @media screen and (min-width: 680px) and (max-width: 840px) {
     .ul-flex{
-        font-size: 18px;
-        gap: 10px;
+        font-size: $font-size-h2;
+        gap: $small;
     }
     .main-titulo{
-        font-size: 18px;
+        font-size: $font-size-h2;
     }
     .grid-container{
         width: 100%;
@@ -12,7 +12,7 @@
         display: grid;
         grid-template-columns: 45% 45%;
         grid-template-rows: 3fr 3fr 3f;
-        gap: 20px;
+        gap: $largue;
         align-items: center;
         justify-content: center;
         flex-basis: 30%;
@@ -24,7 +24,7 @@
     }
 
     .presupuesto-btn{
-        font-size: 20px;
+        font-size: $font-size-h2;
     }
 }
     
@@ -33,18 +33,18 @@
 @media screen and (min-width: 480px) and (max-width: 679px) {
 
     .ul-flex{
-        font-size: 12px;
-        gap: 8px;
+        font-size: $font-size-h3;
+        gap: $small;
 }
 
     .nav-flex{
-        font-size: 15px;
+        font-size: $font-size-h3;
         flex-direction: column-reverse;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: $xlargue;
     }
     .main-titulo{
-        font-size: 12px;
+        font-size: $font-size-h3;
     }
     .grid-container{
         width: 100%;
@@ -68,20 +68,20 @@
 @media screen and (min-width: 300px) and (max-width: 480px) {
 
     .ul-flex{
-        padding: 15px 0px;
-        font-size: 10px;
-        gap: 8px;
+        padding: $medium 0px;
+        font-size: $small;
+        gap: $xsmall;
     }
    
     .nav-flex{
         flex-direction: column-reverse;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: $xlargue;
     }
 
     .nav-header{
-        margin: 2px;
-        padding: 2px;
+        margin: $xxsmall;
+        padding: $xxsmall;
     }
     
     .logo-img{
@@ -89,21 +89,21 @@
     }
 
     .main-titulo{
-        font-size: 8px;
-        padding: 10px;
-        margin: 40px;
+        font-size: $font-size-h1;
+        padding: $small;
+        margin: $largue;
     }
 
     .presupuesto-btn{
-        margin: 30px auto;
-        padding: 10px;
+        margin: $xlargue auto;
+        padding: $small;
     }
 
     .h2-btn{
-        font-size: 10px;
+        font-size: $small;
     }
     .footer p{
-        font-size: 8px;
+        font-size: $font-size-small;
 
     }
     .grid-container{
@@ -124,15 +124,15 @@
         top: 85%;
     }
 
-    h2, .main-subtitulo{
-        font-size: 12px;
-        padding: 10px;
+    .main-subtitulo{
+        font-size: $font-size-h3;
+        padding: $small;
         text-align: center;
-        color: red;
+        color: $color-secundary;
     }
     p, .main-parrafo{
-        font-size: 8px;
-        padding: 10px;
+        font-size: $font-size-small;
+        padding: $small;
         text-align: center;    
     }
 
@@ -148,9 +148,9 @@
     }
     .post-flex{
         margin: auto;
-        padding: 10px;
+        padding: $small;
         border: none;
-        margin-bottom: 20px;
+        margin-bottom: $largue;
     }
     .img-maps{
         width: 100%;

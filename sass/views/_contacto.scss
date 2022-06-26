@@ -2,9 +2,9 @@
 
 
 .section__redes{
-    margin: 50px;
-    padding: 10px;
-    background-color: white;
+    margin: $xlargue;
+    padding: $small;
+    background-color: $color-secundary;
     justify-content: space-around;
     .article__redes{
         margin: auto;
@@ -13,8 +13,8 @@
             max-width: 100%;
             .redes{
                 height: 80px;
-                margin: 10px;
-                padding: 10px;
+                margin: $xsmall;
+                padding: $xsmall;
             }
         }
 

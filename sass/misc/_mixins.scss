@@ -1,0 +1,14 @@
+/*mixin aplicado a mudanza*/
+
+
+@mixin article($color, $font-size, $margin, $padding)
+{
+color: $color;
+font-size: $font-size;
+margin: $margin;
+padding: $padding;
+}
+
+@mixin width($max-width){
+max-width: $max-width;
+}

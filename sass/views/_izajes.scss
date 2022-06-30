@@ -25,35 +25,26 @@
     gap: $small;
 }
 
-.img-banner1{
-    width: 100%;
-    background-color: $color-secundary;
-    grid-area: img1;
+
+@each $key, $val in $banner {
+    .img-banner#{$key} {
+        max-width: 100%;
+        background-color: $color-secundary;
+        grid-area: img#{$key};
+
+    }
+    
 }
 
-.img-banner2{
-    width: 100%;
-    background-color: $color-secundary;
-    grid-area: img2;
+
+@each $key, $val in $width {
+    .container{
+        .grid-banner{
+            .img-#{$key}{
+            max-width: 100%;
+            }
+        }
+    }
 }
 
-.img-banner3{
-    width: 100%;
-    background-color: $color-secundary;
-    grid-area: img3;
-}
-
-.img-banner4{
-    width: 100%;
-    background-color: $color-secundary;
-    grid-area: img4;
-}
-
-.img-banner5{
-    width: 100%;
-    background-color: $color-secundary;
-    grid-area: img5;
-}
-.img-1, .img-2, .img-3, .img-4, .img-5, .img-mps{
-    width: 100%;
-}
+/*FIN IZAJE*/

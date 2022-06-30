@@ -1,22 +1,42 @@
 /*### MAIN CONTACTO ###*/
-
-
-.section__redes{
-    margin: $xlargue;
-    padding: $small;
-    background-color: $color-secundary;
-    justify-content: space-around;
-    .article__redes{
-        margin: auto;
-        max-width: 100%;
-        .redes__img{
-            max-width: 100%;
-            .redes{
-                height: 80px;
-                margin: $xsmall;
-                padding: $xsmall;
+.container{
+    .contact{
+        .contact__form{
+            .form__label{
+                color: $font-color3;
             }
         }
+        .contact__maps{
+            .contacto-maps{
+                margin: auto;
+            }
+            .img-mps{
+                max-width: 100%;
+            }
+        }
+    }
+    .section__redes{
+        margin: auto;
+        margin-top: $largue;
+        margin-bottom: $largue;
+        padding: $small;
+        background-color: $color-secundary;
+        justify-content: space-around;
+        align-items: center;
+        .article__redes{
+            margin: auto;
+            max-width: 100%;
+            .redes__img{
+                max-width: 100%;
+                .redes{
+                    height: 80px;
+                    margin: $xsmall;
+                    padding: $xsmall;
+                }
+            }
 
+     }
     }
 }
+
+/*FIN MAIN CONTACTO*/

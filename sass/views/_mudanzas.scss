@@ -13,22 +13,26 @@
                 }
             .servicios-article{
                 .title-article{
-                    color: $font-color1;
+                    @include article($font-color1, $font-size-h1, $small, $small)
+                   /* color: $font-color1;
                     font-size: $font-size-h1;
                     margin: $small;
-                    padding: $small;
-                    }                    
+                    padding: $small;*/
+                    }
+                                   
                 .subtitle-article{
-                    color: $font-color3;
+                    @include article($font-color3, $font-size-h2, $small, $small)
+                    /*color: $font-color3;
                     font-size: $font-size-h2;
                     margin: $small;
-                    padding: $small;
+                    padding: $small;*/
                     }
                 .parraph-article{
-                    color: $font-color1;
+                    @include article($font-color1, $font-size-h3, $small, $small)
+                   /* color: $font-color1;
                     font-size: $font-size-h3;
                     margin: $small;
-                    padding: $small;
+                    padding: $small;*/
                     }
             }
         }

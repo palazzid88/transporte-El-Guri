@@ -14,6 +14,8 @@ body {
 
 /*VARIABLES*/
 /*Margin & padding & gap*/
+/*MAPS - banner in izaje.scss*/
+/*mixin aplicado a mudanza*/
 /*PARTIALS*/
 /*HEADER*/
 header {
@@ -127,17 +129,29 @@ header {
     color: black;
     font-size: 30px;
     margin: 10px;
-    padding: 10px; }
+    padding: 10px;
+    /* color: $font-color1;
+                    font-size: $font-size-h1;
+                    margin: $small;
+                    padding: $small;*/ }
   #container .article-mudanza .card .servicios-article .subtitle-article {
     color: red;
     font-size: 20px;
     margin: 10px;
-    padding: 10px; }
+    padding: 10px;
+    /*color: $font-color3;
+                    font-size: $font-size-h2;
+                    margin: $small;
+                    padding: $small;*/ }
   #container .article-mudanza .card .servicios-article .parraph-article {
     color: black;
     font-size: 15px;
     margin: 10px;
-    padding: 10px; }
+    padding: 10px;
+    /* color: $font-color1;
+                    font-size: $font-size-h3;
+                    margin: $small;
+                    padding: $small;*/ }
 
 /*## IZAJE.HTML ##*/
 .main-izaje {
@@ -157,33 +171,46 @@ header {
   gap: 10px; }
 
 .img-banner1 {
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   grid-area: img1; }
 
 .img-banner2 {
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   grid-area: img2; }
 
 .img-banner3 {
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   grid-area: img3; }
 
 .img-banner4 {
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   grid-area: img4; }
 
 .img-banner5 {
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   grid-area: img5; }
 
-.img-1, .img-2, .img-3, .img-4, .img-5, .img-mps {
-  width: 100%; }
+.container .grid-banner .img-1 {
+  max-width: 100%; }
 
+.container .grid-banner .img-2 {
+  max-width: 100%; }
+
+.container .grid-banner .img-3 {
+  max-width: 100%; }
+
+.container .grid-banner .img-4 {
+  max-width: 100%; }
+
+.container .grid-banner .img-5 {
+  max-width: 100%; }
+
+/*FIN IZAJE*/
 /*### MAIN NOSOTROS ###*/
 .main-nosotros__flex {
   max-width: 1200px;
@@ -194,35 +221,57 @@ header {
   justify-content: center;
   flex-grow: 1;
   margin-bottom: 20px; }
-
-.nosotros-cabecera__flex {
-  max-width: 100%;
-  margin: 60px auto;
-  background-color: aliceblue;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center; }
-
-.nosotros-img {
-  max-width: 100%; }
+  .main-nosotros__flex .nosotros-cabecera__flex {
+    max-width: 100%;
+    margin: 60px auto;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center; }
+    .main-nosotros__flex .nosotros-cabecera__flex .main-parrafo {
+      margin: 10px;
+      padding: 10px; }
+  .main-nosotros__flex .div-img__nosotros {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; }
+    .main-nosotros__flex .div-img__nosotros .nosotros-img {
+      max-width: 100%; }
 
 /*### MAIN CONTACTO ###*/
-.section__redes {
-  margin: 40px;
+.container .contact .contact__form .form__label {
+  color: red; }
+
+.container .contact .contact__maps .contacto-maps {
+  margin: auto; }
+
+.container .contact .contact__maps .img-mps {
+  max-width: 100%; }
+
+.container .section__redes {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 10px;
   background-color: white;
-  justify-content: space-around; }
-  .section__redes .article__redes {
+  justify-content: space-around;
+  align-items: center; }
+  .container .section__redes .article__redes {
     margin: auto;
     max-width: 100%; }
-    .section__redes .article__redes .redes__img {
+    .container .section__redes .article__redes .redes__img {
       max-width: 100%; }
-      .section__redes .article__redes .redes__img .redes {
+      .container .section__redes .article__redes .redes__img .redes {
         height: 80px;
         margin: 5px;
         padding: 5px; }
 
+/*FIN MAIN CONTACTO*/
 @media screen and (min-width: 680px) and (max-width: 840px) {
   .ul-flex {
     font-size: 20px;

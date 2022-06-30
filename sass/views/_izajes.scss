@@ -30,7 +30,7 @@
     .img-banner#{$key} {
         max-width: 100%;
         background-color: $color-secundary;
-        grid-area: img#{$key};
+        grid-area: #{$val};
 
     }
     

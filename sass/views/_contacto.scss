@@ -1,4 +1,6 @@
 /*### MAIN CONTACTO ###*/
+
+
 .container{
     .contact{
         .contact__form{
@@ -29,7 +31,8 @@
             .redes__img{
                 max-width: 100%;
                 .redes{
-                    height: 80px;
+                    max-width: 100%;
+                    height: ($xlargue*2);
                     margin: $xsmall;
                     padding: $xsmall;
                 }

@@ -18,6 +18,9 @@
         }
     }
     .section__redes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         margin: auto;
         margin-top: $largue;
         margin-bottom: $largue;

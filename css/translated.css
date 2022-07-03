@@ -102,7 +102,8 @@ header {
   position: fixed;
   left: 80%;
   top: 85%;
-  transition: height 1s; }
+  transition: height 1s;
+  z-index: 50; }
 
 .main-wtp:hover {
   height: 80px; }
@@ -154,9 +155,22 @@ header {
                     padding: $small;*/ }
 
 /*## IZAJE.HTML ##*/
-.main-izaje {
-  max-width: 1200px;
-  margin: 0 auto; }
+/*
+.main-izaje{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+*/
+.container .info__izaje {
+  margin: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); }
 
 .grid-banner {
   width: 100%;
@@ -223,11 +237,17 @@ header {
   margin-bottom: 20px; }
   .main-nosotros__flex .nosotros-cabecera__flex {
     max-width: 100%;
-    margin: 60px auto;
-    background-color: aliceblue;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /*    background-color: aliceblue;*/
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: center; }
     .main-nosotros__flex .nosotros-cabecera__flex .main-parrafo {
       margin: 10px;
@@ -254,6 +274,9 @@ header {
   max-width: 100%; }
 
 .container .section__redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -360,12 +383,13 @@ header {
     left: 70%;
     top: 85%; }
   .main-subtitulo {
+    margin: 15px;
     font-size: 15px;
     padding: 10px;
     text-align: center;
     color: white; }
   p, .main-parrafo {
-    font-size: 8px;
+    font-size: 12px;
     padding: 10px;
     text-align: center; }
   #contacto-flex {

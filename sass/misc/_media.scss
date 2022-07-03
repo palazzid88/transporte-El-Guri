@@ -125,13 +125,14 @@
     }
 
     .main-subtitulo{
+        margin: $medium;
         font-size: $font-size-h3;
         padding: $small;
         text-align: center;
         color: $color-secundary;
     }
     p, .main-parrafo{
-        font-size: $font-size-small;
+        font-size: $font-size-p;
         padding: $small;
         text-align: center;    
     }

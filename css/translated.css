@@ -25,9 +25,9 @@ header {
   header .nav__logo {
     width: 200px; }
   header .nav__ul .ul__li .nav__item {
-    margin: 5px; }
+    margin: 10px; }
   header .nav__ul .ul__li .nav__link {
-    font-size: 12px;
+    font-size: 15px;
     padding: 5px;
     color: red;
     border: 3px solid white;
@@ -101,12 +101,9 @@ header {
   height: 70px;
   position: fixed;
   left: 80%;
-  top: 85%;
+  top: 80%;
   transition: height 1s;
   z-index: 50; }
-
-.main-wtp:hover {
-  height: 80px; }
 
 .main-img {
   width: 90%;
@@ -177,10 +174,7 @@ header {
   padding: 10px;
   background-color: white;
   display: grid;
-  grid-template-areas: "img1 img1 img2"
- "img1 img1 img3"
- "img1 img1 img4"
- "img1 img1 img5";
+  grid-template-areas: "img1 img1 img2" "img1 img1 img3" "img1 img1 img4" "img1 img1 img5";
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
   justify-items: center;
@@ -331,7 +325,12 @@ header {
     display: flex;
     flex-direction: column; }
   .presupuesto-btn {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .main-wtp {
+    height: 70px;
+    position: fixed;
+    left: 80%;
+    top: 85%; } }
 
 @media screen and (min-width: 480px) and (max-width: 679px) {
   .ul-flex {
@@ -356,7 +355,12 @@ header {
     flex-grow: 1; }
   .section-article1, .section-article2, .section-article3, .section-article4 {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .main-wtp {
+    height: 50px;
+    position: fixed;
+    left: 70%;
+    top: 75%; } }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .ul-flex {
@@ -392,10 +396,10 @@ header {
     display: flex;
     flex-direction: column; }
   .main-wtp {
-    height: 30px;
+    height: 50px;
     position: fixed;
     left: 70%;
-    top: 85%; }
+    top: 75%; }
   .main-subtitulo {
     margin: 15px;
     font-size: 15px;

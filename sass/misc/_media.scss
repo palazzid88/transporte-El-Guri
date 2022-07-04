@@ -26,6 +26,12 @@
     .presupuesto-btn{
         font-size: $font-size-h2;
     }
+    .main-wtp{
+        height: 70px;
+        position: fixed;
+        left: 80%;
+        top: 85%;
+    }
 }
     
     
@@ -61,6 +67,12 @@
     .section-article1, .section-article2, .section-article3, .section-article4{
         display: flex;
         flex-direction: column;
+    }
+    .main-wtp{
+        height: 50px;
+        position: fixed;
+        left: 70%;
+        top: 75%;
     }
 }
 
@@ -119,10 +131,10 @@
         flex-direction: column;
     }
     .main-wtp{
-        height: 30px;
+        height: 50px;
         position: fixed;
         left: 70%;
-        top: 85%;
+        top: 75%;
     }
 
     .main-subtitulo{

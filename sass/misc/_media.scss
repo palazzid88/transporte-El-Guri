@@ -83,10 +83,11 @@
         margin: $xxsmall;
         padding: $xxsmall;
     }
-    
-    .logo-img{
-        width: 100px;
-    }
+    header{
+        .nav__logo{
+            width: 120px;
+        }
+}
 
     .main-titulo{
         font-size: $font-size-h1;
@@ -103,7 +104,7 @@
         font-size: $small;
     }
     .footer p{
-        font-size: $font-size-small;
+        font-size: $font-size-p;
 
     }
     .grid-container{

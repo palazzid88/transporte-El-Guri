@@ -25,9 +25,9 @@ header {
   header .nav__logo {
     width: 200px; }
   header .nav__ul .ul__li .nav__item {
-    margin: 10px; }
+    margin: 5px; }
   header .nav__ul .ul__li .nav__link {
-    font-size: 15px;
+    font-size: 12px;
     padding: 5px;
     color: red;
     border: 3px solid white;
@@ -177,7 +177,10 @@ header {
   padding: 10px;
   background-color: white;
   display: grid;
-  grid-template-areas: "img1 img1 img2" "img1 img1 img3" "img1 img1 img4" "img1 img1 img5";
+  grid-template-areas: "img1 img1 img2"
+ "img1 img1 img3"
+ "img1 img1 img4"
+ "img1 img1 img5";
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
   justify-items: center;
@@ -266,6 +269,17 @@ header {
 /*### MAIN CONTACTO ###*/
 .container .contact .contact__form .form__label {
   color: red; }
+
+.container .contact .btn-submit {
+  margin: auto; }
+  .container .contact .btn-submit .btn-primary {
+    background-color: red;
+    border-color: red;
+    border-radius: 5px; }
+  .container .contact .btn-submit .btn-primary:hover {
+    border-color: red;
+    color: white;
+    background-color: red; }
 
 .container .contact .contact__maps .contacto-maps {
   margin: auto; }
@@ -356,8 +370,8 @@ header {
   .nav-header {
     margin: 2px;
     padding: 2px; }
-  .logo-img {
-    width: 100px; }
+  header .nav__logo {
+    width: 120px; }
   .main-titulo {
     font-size: 30px;
     padding: 10px;
@@ -368,7 +382,7 @@ header {
   .h2-btn {
     font-size: 10px; }
   .footer p {
-    font-size: 8px; }
+    font-size: 12px; }
   .grid-container {
     width: 100%;
     margin: 0 auto;

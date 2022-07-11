@@ -47,12 +47,9 @@
     height: 70px;
     position: fixed;
     left: 80%;
-    top: 85%;
+    top: 80%;
     transition: height 1s;
-}
-
-.main-wtp:hover{    
-    height: 80px;
+    z-index: 50;
 }
 
 .main-img{

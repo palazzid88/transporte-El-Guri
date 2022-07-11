@@ -27,6 +27,12 @@
     .presupuesto-btn{
         font-size: $font-size-h2;
     }
+    .main-wtp{
+        height: 70px;
+        position: fixed;
+        left: 80%;
+        top: 85%;
+    }
 }
     
     
@@ -65,6 +71,12 @@
         display: flex;
         flex-direction: column;
     }
+    .main-wtp{
+        height: 50px;
+        position: fixed;
+        left: 70%;
+        top: 75%;
+    }
 }
 
 
@@ -86,10 +98,33 @@
         margin: $xxsmall;
         padding: $xxsmall;
     }
-    
-    .header__nav{
-        max-width: 1200px;
-        margin: auto;
+    header{
+        .nav__logo{
+            width: 120px;
+        }
+}
+
+    .main-titulo{
+        font-size: $font-size-h1;
+        padding: $small;
+        margin: $largue;
+    }
+
+    .presupuesto-btn{
+        margin: $xlargue auto;
+        padding: $small;
+    }
+
+    .h2-btn{
+        font-size: $small;
+    }
+    .footer p{
+        font-size: $font-size-p;
+
+    }
+    .grid-container{
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         .nav__logo{

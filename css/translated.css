@@ -106,11 +106,9 @@ header .nav__ul .ul__li .nav__link:hover {
   height: 70px;
   position: fixed;
   left: 80%;
-  top: 85%;
-  transition: height 1s; }
-
-.main-wtp:hover {
-  height: 80px; }
+  top: 80%;
+  transition: height 1s;
+  z-index: 50; }
 
 .main-img {
   width: 90%;
@@ -223,9 +221,22 @@ header .nav__ul .ul__li .nav__link:hover {
                     padding: $small;*/ }
 
 /*## IZAJE.HTML ##*/
-.main-izaje {
-  max-width: 1200px;
-  margin: 0 auto; }
+/*
+.main-izaje{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+*/
+.container .info__izaje {
+  margin: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18); }
 
 .grid-banner {
   width: 100%;
@@ -292,11 +303,17 @@ header .nav__ul .ul__li .nav__link:hover {
   margin-bottom: 20px; }
   .main-nosotros__flex .nosotros-cabecera__flex {
     max-width: 100%;
-    margin: 60px auto;
-    background-color: aliceblue;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /*    background-color: aliceblue;*/
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     justify-content: center; }
     .main-nosotros__flex .nosotros-cabecera__flex .main-parrafo {
       margin: 10px;
@@ -316,6 +333,17 @@ header .nav__ul .ul__li .nav__link:hover {
 .container .contact .contact__form .form__label {
   color: red; }
 
+.container .contact .btn-submit {
+  margin: auto; }
+  .container .contact .btn-submit .btn-primary {
+    background-color: red;
+    border-color: red;
+    border-radius: 5px; }
+  .container .contact .btn-submit .btn-primary:hover {
+    border-color: red;
+    color: white;
+    background-color: red; }
+
 .container .contact .contact__maps .contacto-maps {
   margin: auto; }
 
@@ -323,6 +351,9 @@ header .nav__ul .ul__li .nav__link:hover {
   max-width: 100%; }
 
 .container .section__redes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -364,7 +395,12 @@ header .nav__ul .ul__li .nav__link:hover {
     display: flex;
     flex-direction: column; }
   .presupuesto-btn {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .main-wtp {
+    height: 70px;
+    position: fixed;
+    left: 80%;
+    top: 85%; } }
 
 @media screen and (min-width: 480px) and (max-width: 679px) {
   .ul-flex {
@@ -389,7 +425,12 @@ header .nav__ul .ul__li .nav__link:hover {
     flex-grow: 1; }
   .section-article1, .section-article2, .section-article3, .section-article4 {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .main-wtp {
+    height: 50px;
+    position: fixed;
+    left: 70%;
+    top: 75%; } }
 
 @media screen and (min-width: 300px) and (max-width: 480px) {
   .ul-flex {
@@ -403,6 +444,7 @@ header .nav__ul .ul__li .nav__link:hover {
   .nav-header {
     margin: 2px;
     padding: 2px; }
+<<<<<<< HEAD
   .header__nav {
     max-width: 1200px;
     margin: auto;
@@ -441,13 +483,21 @@ header .nav__ul .ul__li .nav__link:hover {
       flex-direction: column; }
       .info-pago .card__pago .picture__pago .img__pago {
         width: 100%; }
+=======
+  header .nav__logo {
+    width: 120px; }
+  .main-titulo {
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px; }
+>>>>>>> e602ccba98b7a4170bfcfaae22d98fabfedb124a
   .presupuesto-btn {
     margin: 40px auto;
     padding: 10px; }
   .h2-btn {
     font-size: 10px; }
   .footer p {
-    font-size: 8px; }
+    font-size: 12px; }
   .grid-container {
     width: 100%;
     margin: 0 auto;
@@ -457,17 +507,27 @@ header .nav__ul .ul__li .nav__link:hover {
     display: flex;
     flex-direction: column; }
   .main-wtp {
-    height: 30px;
+    height: 50px;
     position: fixed;
     left: 70%;
-    top: 85%; }
+    top: 75%; }
   .main-subtitulo {
+<<<<<<< HEAD
     font-size: 12px;
     padding: 10px;
     text-align: center;
     color: white; }
   .main-parrafo {
     font-size: 8px;
+=======
+    margin: 15px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    color: white; }
+  p, .main-parrafo {
+    font-size: 12px;
+>>>>>>> e602ccba98b7a4170bfcfaae22d98fabfedb124a
     padding: 10px;
     text-align: center; }
   #contacto-flex {

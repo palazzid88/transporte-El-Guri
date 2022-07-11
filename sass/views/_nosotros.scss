@@ -11,11 +11,17 @@
     margin-bottom: 20px;
     .nosotros-cabecera__flex{
         max-width: 100%;
-        margin: 60px auto;
-        background-color: aliceblue;
+        margin: 10px auto;
+        background: rgba( 255, 255, 255, 0.5 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    /*    background-color: aliceblue;*/
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         justify-content: center;
         .main-parrafo{
             margin: $small;

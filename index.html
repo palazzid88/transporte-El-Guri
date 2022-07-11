@@ -16,14 +16,17 @@
     <link rel="stylesheet" href=".\css\translated.css">
     <link rel="stylesheet" href="https://use.typekit.net/zbr8igi.css">
     <link href="http://fonts.cdnfonts.com/css/nimbus-sans-l" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    
-</head>
+
+  </head>
 <body>
     <header class="header">
-      <nav class="navbar navbar-expand-md">
+      <nav class="navbar navbar-expand-md navegador">
         <div class="container-fluid">
-          <img href="./index.html" class="navbar-brand nav__logo" src=".\pages\img\logo.svg" class="img-logo">
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,13 +40,13 @@
             </ul>|
           </div>
         </div>
-      </nav>    
+      </nav>
+      <div class="header__nav">
+        <img href="./index.html" class="navbar-brand nav__logo" src=".\pages\img\logo.svg" class="img-logo">
+        <h1 class="main-titulo">-Mudanzas e izajes - A cualquiér punto del país- </h1>
+      </div>
     </header>
     <main class="main">
-      <div class="main-mudanza">
-        <h1 class="main-titulo">-Mudanzas e izajes-</h1>
-        <h2 class="main-subtitulo">-A cualquiér punto del país-</h2>
-      </div>
       <div class="container  carousel-boot">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
@@ -74,7 +77,59 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>  
+        </div>
+      </div>
+      <div class="subtitulo">
+        <h2 class="main-subtitulo">
+          Nuestra empresa se encuentra certificada y habilitada en:
+        </h2>
+      </div>
+        <section class="info-habilitacion">
+          <div class="info__habilitacion">
+            <picture class="card__habilitacion">
+              <img src="./pages/img/pase1.png" class="img__habilitacion">
+            </picture>
+            <div class="info__p">
+              <p>Habilitacion CNRT</p>
+            </div>
+            <div class="link">
+              <a href="https://www.argentina.gob.ar/transporte/cnrt" class="link__habilitacion"> enlace CNRT </a>
+            </div>
+          </div>
+          <div class="info__habilitacion">
+            <picture class="card__habilitacion">
+              <img src="./pages/img/pase2.png" class="img__habilitacion">
+            </picture>
+            <div class="info__p">
+              <p>Habilitacion RUTA</p>
+            </div>
+            <div class="link">
+              <a href="https://www.ceac.com.ar/ruta/" class="link__habilitacion"> enlace RUTA </a>
+            </div>
+          </div>
+          <div class="info__habilitacion">
+            <picture class="card__habilitacion">
+              <img src="./pages/img/pase3.png" class="img__habilitacion">
+            </picture>
+            <div class="info__p">
+              <p>Habilitacion RTO</p>
+            </div>
+            <div class="link">
+              <a href="https://www.argentina.gob.ar/seguridadvial/revisiontecnica" class="link__habilitacion"> enlace RTO </a>
+            </div>
+          </div>
+        </section>
+        <section class="info-pago">
+          <div class="info-pago__subtitle">
+            <p class="main-subtitulo">Nuestros medios de pago:</p>
+          </div>
+          <div class="card__pago">
+            <picture class="picture__pago">
+              <img src="./pages/img/pago2.png" class="img__pago">
+              <img src="./pages/img/pago1.png" class="img__pago">
+            </picture>
+          </div>
+        </section>
         <div class="container botton">
           <h2 class="main-subtitulo">Solicite presupuesto sin cargo</h2>
           <section class="container row justify-content-center">

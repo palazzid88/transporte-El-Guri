@@ -1,4 +1,5 @@
-@media screen and (min-width: 680px) and (max-width: 840px) {
+@media screen and (min-width: 680px) and (max-width: 840px) 
+{
     .ul-flex{
         font-size: $font-size-h2;
         gap: $small;
@@ -30,12 +31,13 @@
     
     
 
-@media screen and (min-width: 480px) and (max-width: 679px) {
+@media screen and (min-width: 480px) and (max-width: 679px) 
+{
 
     .ul-flex{
         font-size: $font-size-h3;
         gap: $small;
-}
+    }
 
     .nav-flex{
         font-size: $font-size-h3;
@@ -58,15 +60,16 @@
         flex-grow: 1;
     }
 
-    .section-article1, .section-article2, .section-article3, .section-article4{
+    .section-article1, .section-article2, .section-article3, .section-article4 
+    {
         display: flex;
         flex-direction: column;
     }
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
-
+@media screen and (min-width: 300px) and (max-width: 480px) 
+{
     .ul-flex{
         padding: $medium 0px;
         font-size: $small;
@@ -84,79 +87,140 @@
         padding: $xxsmall;
     }
     
-    .logo-img{
-        width: 100px;
-    }
-
-    .main-titulo{
-        font-size: $font-size-h1;
-        padding: $small;
-        margin: $largue;
-    }
-
-    .presupuesto-btn{
-        margin: $xlargue auto;
-        padding: $small;
-    }
-
-    .h2-btn{
-        font-size: $small;
-    }
-    .footer p{
-        font-size: $font-size-small;
-
-    }
-    .grid-container{
-        width: 100%;
-        margin: 0 auto;
+    .header__nav{
+        max-width: 1200px;
+        margin: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        .nav__logo{
+            width: 150px;
+            }
+        .main-titulo{
+            font-size: $font-size-p;
+            margin: auto;
+            padding: $largue;
+            background: linear-gradient(to left, red, white);
+            border-radius: $small;
+            box-shadow: 6px 10px 10px black;
+            text-align: center;
+        }
     }
+    
         
-    .section-article1, .section-article2, .section-article3, .section-article4{
-        display: flex;
-        flex-direction: column;
-    }
-    .main-wtp{
-        height: 30px;
-        position: fixed;
-        left: 70%;
-        top: 85%;
+
+
+        
+
+    .info-habilitacion
+    {
+        flex-wrap: wrap;
+        .info__habilitacion
+        {
+            .card__habilitacion{
+                width: 70%;
+                align-items: center;
+            }
+            .info__p{
+                margin: $xsmall;
+                padding: $small;
+            }
+            .img__habilitacion{
+                width: 100%;
+            }
+        
+            .info__p{
+                font-size: $font-size-h3;
+            }
+            .link__habilitacion{
+                font-size: 8px;
+            }
+        }
     }
 
-    .main-subtitulo{
-        font-size: $font-size-h3;
-        padding: $small;
-        text-align: center;
-        color: $color-secundary;
-    }
-    p, .main-parrafo{
-        font-size: $font-size-small;
-        padding: $small;
-        text-align: center;    
-    }
 
-    #contacto-flex{
-        margin: auto;
+
+.info-pago
+{
+    .card__pago{
         width: 100%;
-        background-color: aliceblue;
-        margin: 100px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .post-flex{
-        margin: auto;
-        padding: $small;
-        border: none;
-        margin-bottom: $largue;
-    }
-    .img-maps{
-        width: 100%;
-    }
+        .picture__pago{
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            .img__pago{
+                width: 100%;
+            }
+        }
 
+    }
 }
+
+
+.presupuesto-btn
+{
+    margin: $xlargue auto;
+    padding: $small;
+}
+
+.h2-btn{
+    font-size: $small;
+}
+.footer p{
+    font-size: $font-size-small;
+}
+.grid-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+        
+.section-article1, .section-article2, .section-article3, .section-article4
+{
+    display: flex;
+    flex-direction: column;
+}
+.main-wtp{
+    height: 30px;
+    position: fixed;
+    left: 70%;
+    top: 85%;
+}
+
+.main-subtitulo{
+    font-size: 12px;
+    padding: $small;
+    text-align: center;
+    color: $color-secundary;
+}
+.main-parrafo{
+    font-size: $font-size-small;
+    padding: $small;
+    text-align: center;    
+}
+
+#contacto-flex{
+    margin: auto;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.post-flex{
+    margin: auto;
+    padding: $small;
+    border: none;
+    margin-bottom: $largue;
+}
+.img-maps{
+    width: 100%;
+}
+
+
 
 @keyframes scale {
     0% {
@@ -171,6 +235,6 @@
 
     100% {
         font-size: 24px;
-        color: red;
+        color: red;}
     }
 }

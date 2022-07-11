@@ -1,13 +1,13 @@
 
     /*HEADER*/
 header {
-    background-color: white;
+    .navegador{
+        background-color: white;
+    }
     .header-nav{
     max-width: 1200px;
     }
-    .nav__logo{
-    width: 200px;
-    }
+    
     .nav__ul{
         .ul__li{
             .nav__item{
@@ -30,3 +30,21 @@ header {
 
     }
 }   
+.header__nav{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    .nav__logo{
+        width: 200px;
+        }
+    .main-titulo{
+        font-size: $font-size-h1;
+        margin: auto;
+        padding: $largue;
+        background: linear-gradient(to left, red, white);
+        border-radius: $small;
+        box-shadow: 6px 10px 10px black;
+        text-align: center;
+    }
+}

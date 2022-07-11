@@ -1,56 +1,47 @@
 /* INICIO.HTML MAIN CONTAINER*/
 
-.main-mudanza{
-    max-width: 1200px;
-    margin: auto;
-}
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
 
-.carousel-boot{
-    margin-top: ($largue*3);
-    max-width: 650px;
-}
 
-.card{
-    margin: $small;
-    padding: $small;
-}
 
-.btn-boot{
-    margin-bottom: $xlargue;
-}
 
-.btn{
-    color: $color-secundary;
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
     }
 
-.btn:hover{
-    background-color: $color-footer;
-    border: solid 1px $color-footer;
-}
-
-.main-subtitulo{
-    color: $color-secundary;
-    background-color: $color-primary;
-    margin: $xlargue;
-    padding: $small;
-    text-align: center;
+    .carousel-boot{
+        margin-top: $largue;
+        margin-bottom: ($largue*2);
+        max-width: 650px;
     }
 
-.main-titulo{
-    font-size: $font-size-h1;
-    margin-top: ($xlargue*2);
-    margin-bottom: ($xlargue*2);
-    padding: $largue;
-    background: linear-gradient(to left, red, white);
-    border-radius: $small;
-    box-shadow: 6px 10px 10px black;
-    text-align: center;
-}
+    .card{
+        margin: $small;
+        padding: $small;
+    }
+
+    .btn-boot{
+        margin-bottom: $xlargue;
+    }
+
+    .btn{
+        color: $color-secundary;
+        }
+
+    .btn:hover{
+        background-color: $color-footer;
+        border: solid 1px $color-footer;
+    }
+
+    .main-subtitulo{
+        color: $color-secundary;
+        background-color: $color-primary;
+        margin: $xlargue;
+        padding: $small;
+        text-align: center;
+        }
+
 
 .main-wtp{
     height: 70px;
@@ -75,4 +66,69 @@
     left: 80%;
     top: 85%;
     transition: height 1s;
+}
+
+
+
+.info-pago{
+    margin: auto;
+    padding: $small;
+    display: flex;
+    flex-direction: column;
+    .info-pago__subtitle{
+        margin: auto;
+        padding: 10px, 20px;
+        padding: $medium;
+        text-align: center;
+        font-size: 20px;
+        color: $color-primary;
+        .subtitle__pago{
+            margin: $medium;
+            padding: 20px;
+            border: 1px solid black;
+        }        
+    }
+    .card__pago{
+        max-width: 1200px;
+        width: 100%;
+        background-color: $color-secundary;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        }
+        .picture__pago{
+            margin: auto;
+            display: flex;
+            .img__pago{
+                max-width: 1200px;
+                width: 50%;
+                margin: auto;
+                padding: $small;
+            }
+        }               
+}  
+
+.info-habilitacion{
+    background-color: $color-secundary;
+    max-width: 1200px;
+    margin: auto;
+    padding: $small;
+    display: flex;
+    flex-direction: row;
+    .info__habilitacion{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: $medium;
+        .card__habilitacion{
+           .img__habilitacion{
+            max-width: 1200px;
+            width: 100%;
+           }
+        }
+    }
 }

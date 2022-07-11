@@ -2,7 +2,7 @@
 * {
   margin: 0%;
   padding: 0%;
-  font-family: cooper-black-std,serif;
+  font-family: 'cooper-black-std',serif, 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal; }
 
@@ -18,25 +18,43 @@ body {
 /*mixin aplicado a mudanza*/
 /*PARTIALS*/
 /*HEADER*/
-header {
+header .navegador {
   background-color: white; }
-  header .header-nav {
-    max-width: 1200px; }
-  header .nav__logo {
+
+header .header-nav {
+  max-width: 1200px; }
+
+header .nav__ul .ul__li .nav__item {
+  margin: 10px; }
+
+header .nav__ul .ul__li .nav__link {
+  font-size: 15px;
+  padding: 5px;
+  color: red;
+  border: 3px solid white;
+  border-radius: 5px;
+  transition: border 1s; }
+
+header .nav__ul .ul__li .nav__link:hover {
+  border-color: red;
+  color: white;
+  background-color: red; }
+
+.header__nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row; }
+  .header__nav .nav__logo {
     width: 200px; }
-  header .nav__ul .ul__li .nav__item {
-    margin: 10px; }
-  header .nav__ul .ul__li .nav__link {
-    font-size: 15px;
-    padding: 5px;
-    color: red;
-    border: 3px solid white;
-    border-radius: 5px;
-    transition: border 1s; }
-  header .nav__ul .ul__li .nav__link:hover {
-    border-color: red;
-    color: white;
-    background-color: red; }
+  .header__nav .main-titulo {
+    font-size: 25px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to left, red, white);
+    border-radius: 10px;
+    box-shadow: 6px 10px 10px black;
+    text-align: center; }
 
 /*FOOTER*/
 .footer {
@@ -53,17 +71,14 @@ header {
 
 /*VIEWS*/
 /* INICIO.HTML MAIN CONTAINER*/
-.main-mudanza {
-  max-width: 1200px;
-  margin: auto; }
-
 .container {
   width: 90%;
   max-width: 1200px;
   margin: auto; }
 
 .carousel-boot {
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
   max-width: 650px; }
 
 .card {
@@ -87,16 +102,6 @@ header {
   padding: 10px;
   text-align: center; }
 
-.main-titulo {
-  font-size: 30px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  padding: 20px;
-  background: linear-gradient(to left, red, white);
-  border-radius: 10px;
-  box-shadow: 6px 10px 10px black;
-  text-align: center; }
-
 .main-wtp {
   height: 70px;
   position: fixed;
@@ -118,7 +123,71 @@ header {
   top: 85%;
   transition: height 1s; }
 
+.info-pago {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; }
+  .info-pago .info-pago__subtitle {
+    margin: auto;
+    padding: 10px, 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: red; }
+    .info-pago .info-pago__subtitle .subtitle__pago {
+      margin: 15px;
+      padding: 20px;
+      border: 1px solid black; }
+  .info-pago .card__pago {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: auto; }
+  .info-pago .picture__pago {
+    margin: auto;
+    display: flex; }
+    .info-pago .picture__pago .img__pago {
+      max-width: 1200px;
+      width: 50%;
+      margin: auto;
+      padding: 10px; }
+
+.info-habilitacion {
+  background-color: white;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row; }
+  .info-habilitacion .info__habilitacion {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 15px; }
+    .info-habilitacion .info__habilitacion .card__habilitacion .img__habilitacion {
+      max-width: 1200px;
+      width: 100%; }
+
 /* ###  mudanzas.html ### */
+#container .nav__logo {
+  width: 200px; }
+
+#container .main-titulo {
+  font-size: 25px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(to left, red, white);
+  border-radius: 10px;
+  box-shadow: 6px 10px 10px black;
+  text-align: center; }
+
 #container .article-mudanza {
   max-width: 95%;
   justify-content: center;
@@ -127,7 +196,7 @@ header {
     width: 100%; }
   #container .article-mudanza .card .servicios-article .title-article {
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     margin: 10px;
     padding: 10px;
     /* color: $font-color1;
@@ -260,6 +329,7 @@ header {
   padding: 10px;
   background-color: white;
   justify-content: space-around;
+  text-align: center;
   align-items: center; }
   .container .section__redes .article__redes {
     margin: auto;
@@ -333,12 +403,44 @@ header {
   .nav-header {
     margin: 2px;
     padding: 2px; }
-  .logo-img {
-    width: 100px; }
-  .main-titulo {
-    font-size: 30px;
-    padding: 10px;
-    margin: 20px; }
+  .header__nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row; }
+    .header__nav .nav__logo {
+      width: 150px; }
+    .header__nav .main-titulo {
+      font-size: 12px;
+      margin: auto;
+      padding: 20px;
+      background: linear-gradient(to left, red, white);
+      border-radius: 10px;
+      box-shadow: 6px 10px 10px black;
+      text-align: center; }
+  .info-habilitacion {
+    flex-wrap: wrap; }
+    .info-habilitacion .info__habilitacion .card__habilitacion {
+      width: 70%;
+      align-items: center; }
+    .info-habilitacion .info__habilitacion .info__p {
+      margin: 5px;
+      padding: 10px; }
+    .info-habilitacion .info__habilitacion .img__habilitacion {
+      width: 100%; }
+    .info-habilitacion .info__habilitacion .info__p {
+      font-size: 15px; }
+    .info-habilitacion .info__habilitacion .link__habilitacion {
+      font-size: 8px; }
+  .info-pago .card__pago {
+    width: 100%; }
+    .info-pago .card__pago .picture__pago {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-direction: column; }
+      .info-pago .card__pago .picture__pago .img__pago {
+        width: 100%; }
   .presupuesto-btn {
     margin: 40px auto;
     padding: 10px; }
@@ -360,11 +462,11 @@ header {
     left: 70%;
     top: 85%; }
   .main-subtitulo {
-    font-size: 15px;
+    font-size: 12px;
     padding: 10px;
     text-align: center;
     color: white; }
-  p, .main-parrafo {
+  .main-parrafo {
     font-size: 8px;
     padding: 10px;
     text-align: center; }
@@ -383,15 +485,14 @@ header {
     border: none;
     margin-bottom: 20px; }
   .img-maps {
-    width: 100%; } }
-
-@keyframes scale {
-  0% {
-    font-size: 24px;
-    color: red; }
-  50% {
-    font-size: 23px;
-    color: red; }
-  100% {
-    font-size: 24px;
-    color: red; } }
+    width: 100%; }
+  @keyframes scale {
+    0% {
+      font-size: 24px;
+      color: red; }
+    50% {
+      font-size: 23px;
+      color: red; }
+    100% {
+      font-size: 24px;
+      color: red; } } }

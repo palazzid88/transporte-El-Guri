@@ -1,6 +1,18 @@
 /* ###  mudanzas.html ### */
 
 #container{
+    .nav__logo{
+        width: 200px;
+        }
+        .main-titulo{
+            font-size: $font-size-h1;
+            margin: auto;
+            padding: $largue;
+            background: linear-gradient(to left, red, white);
+            border-radius: $small;
+            box-shadow: 6px 10px 10px black;
+            text-align: center;
+        }
     .article-mudanza{
         max-width: 95%;
         justify-content: center;

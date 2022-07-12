@@ -9,12 +9,15 @@
 body {
   width: 100%;
   margin: auto;
-  background-image: url("../pages/img/backx.jpg");
-  background-size: cover; }
+  background-image: url("../pages/img/img2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
-/*VARIABLES*/
+/*### VARIABLES ###*/
 /*Margin & padding & gap*/
 /*MAPS - banner in izaje.scss*/
+/*### FIN VARIABLES ###*/
 /*mixin aplicado a mudanza*/
 /*PARTIALS*/
 /*HEADER*/
@@ -70,56 +73,34 @@ header .nav__ul .ul__li .nav__link:hover {
   text-align: center; }
 
 /*VIEWS*/
-/* INICIO.HTML MAIN CONTAINER*/
-.container {
+/*### INICIO.HTML ###*/
+.carousel-boot {
   width: 90%;
   max-width: 1200px;
-  margin: auto; }
-
-.carousel-boot {
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 40px;
   max-width: 650px; }
 
-.card {
-  margin: 10px;
-  padding: 10px; }
-
-.btn-boot {
-  margin-bottom: 40px; }
-
-.btn {
-  color: white; }
-
-.btn:hover {
-  background-color: black;
-  border: solid 1px black; }
-
-.main-subtitulo {
-  color: white;
-  background-color: red;
-  margin: 40px;
+.info-habilitacion {
+  background-color: white;
+  max-width: 1200px;
+  margin: auto;
   padding: 10px;
-  text-align: center; }
-
-.main-wtp {
-  height: 70px;
-  position: fixed;
-  left: 80%;
-  top: 80%;
-  transition: height 1s;
-  z-index: 50; }
-
-.main-img {
-  width: 90%;
-  border: solid white 5px; }
-
-.main-wtp {
-  height: 70px;
-  position: fixed;
-  left: 80%;
-  top: 85%;
-  transition: height 1s; }
+  display: flex;
+  flex-direction: row; }
+  .info-habilitacion .info__habilitacion {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 15px; }
+    .info-habilitacion .info__habilitacion .card__habilitacion .img__habilitacion {
+      max-width: 1200px;
+      width: 100%; }
 
 .info-pago {
   margin: auto;
@@ -153,27 +134,37 @@ header .nav__ul .ul__li .nav__link:hover {
       margin: auto;
       padding: 10px; }
 
-.info-habilitacion {
-  background-color: white;
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: row; }
-  .info-habilitacion .info__habilitacion {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 15px; }
-    .info-habilitacion .info__habilitacion .card__habilitacion .img__habilitacion {
-      max-width: 1200px;
-      width: 100%; }
+.btn-boot {
+  margin-bottom: 40px; }
 
-/* ###  mudanzas.html ### */
+.btn {
+  color: white; }
+
+.btn:hover {
+  background-color: black;
+  border: solid 1px black; }
+
+.main-subtitulo {
+  color: white;
+  background-color: red;
+  margin: 40px;
+  padding: 10px;
+  text-align: center; }
+
+.main-wtp {
+  height: 70px;
+  position: fixed;
+  left: 80%;
+  top: 80%;
+  transition: height 1s;
+  z-index: 50; }
+
+.main-img {
+  width: 90%;
+  border: solid white 5px; }
+
+/*### FIN INICIO.HTML ###*/
+/* ###  MUDANZAS.HTML ### */
 #container .nav__logo {
   width: 200px; }
 
@@ -190,36 +181,40 @@ header .nav__ul .ul__li .nav__link:hover {
   max-width: 95%;
   justify-content: center;
   margin: auto; }
-  #container .article-mudanza .card .card-img .picture-img {
-    width: 100%; }
-  #container .article-mudanza .card .servicios-article .title-article {
-    color: black;
-    font-size: 25px;
+  #container .article-mudanza .card {
     margin: 10px;
-    padding: 10px;
-    /* color: $font-color1;
+    padding: 10px; }
+    #container .article-mudanza .card .card-img .picture-img {
+      width: 100%; }
+    #container .article-mudanza .card .servicios-article .title-article {
+      color: black;
+      font-size: 25px;
+      margin: 10px;
+      padding: 10px;
+      /* color: $font-color1;
                     font-size: $font-size-h1;
                     margin: $small;
                     padding: $small;*/ }
-  #container .article-mudanza .card .servicios-article .subtitle-article {
-    color: red;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-    /*color: $font-color3;
+    #container .article-mudanza .card .servicios-article .subtitle-article {
+      color: red;
+      font-size: 20px;
+      margin: 10px;
+      padding: 10px;
+      /*color: $font-color3;
                     font-size: $font-size-h2;
                     margin: $small;
                     padding: $small;*/ }
-  #container .article-mudanza .card .servicios-article .parraph-article {
-    color: black;
-    font-size: 15px;
-    margin: 10px;
-    padding: 10px;
-    /* color: $font-color1;
+    #container .article-mudanza .card .servicios-article .parraph-article {
+      color: black;
+      font-size: 15px;
+      margin: 10px;
+      padding: 10px;
+      /* color: $font-color1;
                     font-size: $font-size-h3;
                     margin: $small;
                     padding: $small;*/ }
 
+/* ###  FIN MUDANZAS.HTML ### */
 /*## IZAJE.HTML ##*/
 /*
 .main-izaje{
@@ -237,6 +232,10 @@ header .nav__ul .ul__li .nav__link:hover {
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18); }
+
+.container .card {
+  margin: 10px;
+  padding: 10px; }
 
 .grid-banner {
   width: 100%;
@@ -290,8 +289,8 @@ header .nav__ul .ul__li .nav__link:hover {
 .container .grid-banner .img-5 {
   max-width: 100%; }
 
-/*FIN IZAJE*/
-/*### MAIN NOSOTROS ###*/
+/*### FIN IZAJES.HTML ###*/
+/*### NOSOTROS.HTML ###*/
 .main-nosotros__flex {
   max-width: 1200px;
   margin: auto;
@@ -310,7 +309,6 @@ header .nav__ul .ul__li .nav__link:hover {
     -webkit-backdrop-filter: blur(0px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    /*    background-color: aliceblue;*/
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -329,7 +327,8 @@ header .nav__ul .ul__li .nav__link:hover {
     .main-nosotros__flex .div-img__nosotros .nosotros-img {
       max-width: 100%; }
 
-/*### MAIN CONTACTO ###*/
+/*## FIN NOSOTROS.HTML ##*/
+/*### CONTACTO.HTML ###*/
 .container .contact .contact__form .form__label {
   color: red; }
 
@@ -373,7 +372,9 @@ header .nav__ul .ul__li .nav__link:hover {
         margin: 5px;
         padding: 5px; }
 
-/*FIN MAIN CONTACTO*/
+/*### FIN CONTACTO.HTML ###*/
+/*### MEDIAQUERIES ###*/
+/*## MEDIA 680-840 ##*/
 @media screen and (min-width: 680px) and (max-width: 840px) {
   .ul-flex {
     font-size: 20px;
@@ -402,6 +403,7 @@ header .nav__ul .ul__li .nav__link:hover {
     left: 80%;
     top: 85%; } }
 
+/*## MEDIA 480-679 ##*/
 @media screen and (min-width: 480px) and (max-width: 679px) {
   .ul-flex {
     font-size: 15px;
@@ -432,7 +434,8 @@ header .nav__ul .ul__li .nav__link:hover {
     left: 70%;
     top: 75%; } }
 
-@media screen and (min-width: 300px) and (max-width: 480px) {
+/*## MEDIA 300-479 ##*/
+@media screen and (min-width: 300px) and (max-width: 479px) {
   .ul-flex {
     padding: 15px 0px;
     font-size: 10px;
@@ -444,10 +447,10 @@ header .nav__ul .ul__li .nav__link:hover {
   .nav-header {
     margin: 2px;
     padding: 2px; }
-  header .nav__logo {
+  .header__nav .nav__logo {
     width: 120px; }
-  .main-titulo {
-    font-size: 25px;
+  .header__nav .main-titulo {
+    font-size: 12px;
     padding: 10px;
     margin: 20px; }
   .presupuesto-btn {
@@ -521,7 +524,7 @@ header .nav__ul .ul__li .nav__link:hover {
     text-align: center;
     color: white; }
   .main-parrafo {
-    font-size: 8px;
+    font-size: 12px;
     padding: 10px;
     text-align: center; }
   #contacto-flex {
@@ -539,14 +542,4 @@ header .nav__ul .ul__li .nav__link:hover {
     border: none;
     margin-bottom: 20px; }
   .img-maps {
-    width: 100%; }
-  @keyframes scale {
-    0% {
-      font-size: 24px;
-      color: red; }
-    50% {
-      font-size: 23px;
-      color: red; }
-    100% {
-      font-size: 24px;
-      color: red; } } }
+    width: 100%; } }

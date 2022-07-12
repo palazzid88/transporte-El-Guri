@@ -1,4 +1,4 @@
-/* ###  mudanzas.html ### */
+/* ###  MUDANZAS.HTML ### */
 
 #container{
     .nav__logo{
@@ -18,11 +18,13 @@
         justify-content: center;
         margin: auto;
         .card{
+            margin: $small;
+            padding: $small;
             .card-img{
                 .picture-img{
                     width: 100%;
                     }
-                }
+            }
             .servicios-article{
                 .title-article{
                     @include article($font-color1, $font-size-h1, $small, $small)
@@ -30,8 +32,7 @@
                     font-size: $font-size-h1;
                     margin: $small;
                     padding: $small;*/
-                    }
-                                   
+                    }                                   
                 .subtitle-article{
                     @include article($font-color3, $font-size-h2, $small, $small)
                     /*color: $font-color3;
@@ -50,6 +51,9 @@
         }
     }
 }
+
+/* ###  FIN MUDANZAS.HTML ### */
+
                 
                 
             

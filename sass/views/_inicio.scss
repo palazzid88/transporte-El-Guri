@@ -1,71 +1,37 @@
-/* INICIO.HTML MAIN CONTAINER*/
+/*### INICIO.HTML ###*/
 
-
-
-
-
-    .container{
+.carousel-boot{
         width: 90%;
         max-width: 1200px;
         margin: auto;
-    }
-
-    .carousel-boot{
         margin-top: $largue;
         margin-bottom: ($largue*2);
         max-width: 650px;
-    }
-
-    .card{
-        margin: $small;
+}
+.info-habilitacion{
+        background-color: $color-secundary;
+        max-width: 1200px;
+        margin: auto;
         padding: $small;
-    }
-
-    .btn-boot{
-        margin-bottom: $xlargue;
-    }
-
-    .btn{
-        color: $color-secundary;
+        display: flex;
+        flex-direction: row;
+        .info__habilitacion{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding: $medium;
+            .card__habilitacion{
+               .img__habilitacion{
+                max-width: 1200px;
+                width: 100%;
+               }
+            }
         }
-
-    .btn:hover{
-        background-color: $color-footer;
-        border: solid 1px $color-footer;
-    }
-
-    .main-subtitulo{
-        color: $color-secundary;
-        background-color: $color-primary;
-        margin: $xlargue;
-        padding: $small;
-        text-align: center;
-        }
-
-
-.main-wtp{
-    height: 70px;
-    position: fixed;
-    left: 80%;
-    top: 80%;
-    transition: height 1s;
-    z-index: 50;
 }
-
-.main-img{
-    width: 90%;
-    border: solid white 5px;
-}
-
-.main-wtp{
-    height: 70px;
-    position: fixed;
-    left: 80%;
-    top: 85%;
-    transition: height 1s;
-}
-
-
 
 .info-pago{
     margin: auto;
@@ -105,27 +71,41 @@
         }               
 }  
 
-.info-habilitacion{
-    background-color: $color-secundary;
-    max-width: 1200px;
-    margin: auto;
-    padding: $small;
-    display: flex;
-    flex-direction: row;
-    .info__habilitacion{
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        padding: $medium;
-        .card__habilitacion{
-           .img__habilitacion{
-            max-width: 1200px;
-            width: 100%;
-           }
-        }
+.btn-boot{
+    margin-bottom: $xlargue;
     }
-}
+
+.btn{
+    color: $color-secundary;
+    }
+
+.btn:hover{
+    background-color: $color-footer;
+    border: solid 1px $color-footer;
+    }
+
+.main-subtitulo{
+    color: $color-secundary;
+    background-color: $color-primary;
+    margin: $xlargue;
+    padding: $small;
+    text-align: center;
+    }
+
+
+.main-wtp{
+    height: 70px;
+    position: fixed;
+    left: 80%;
+    top: 80%;
+    transition: height 1s;
+    z-index: 50;
+    }
+
+.main-img{
+    width: 90%;
+    border: solid white 5px;
+    }
+
+
+/*### FIN INICIO.HTML ###*/

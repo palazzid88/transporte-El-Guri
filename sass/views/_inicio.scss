@@ -85,9 +85,12 @@
     }
 
 .main-subtitulo{
+    max-width: 1200px;
+    margin: auto;
     color: $color-secundary;
     background-color: $color-primary;
-    margin: $xlargue;
+    margin-top: $xlargue;
+    margin-bottom: $xlargue;
     padding: $small;
     text-align: center;
     }

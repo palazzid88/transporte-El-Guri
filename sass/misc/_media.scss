@@ -38,6 +38,13 @@
         left: 80%;
         top: 85%;
     }
+    .section__attention{
+        display: flex;
+        flex-wrap: wrap;
+        .attention_img{
+            width: 100%;
+        }
+    }
 }
     
 /*## MEDIA 480-679 ##*/
@@ -173,6 +180,13 @@
             .link__habilitacion{
                 font-size: 8px;
             }
+        }
+    }
+    .section__attention{
+        display: flex;
+        flex-wrap: wrap;
+        .attention_img{
+            width: 100%;
         }
     }
 

@@ -12,3 +12,17 @@ padding: $padding;
 @mixin width($max-width){
 max-width: $max-width;
 }
+
+
+/*MARGIN & PADDING SMALL*/
+@mixin normal($margin, $padding){
+margin: $margin;
+padding: $padding;
+}
+
+/*MIXIN FLEX*/
+@mixin flex($display, $direction-column, $flex-wrap){
+display: $display;
+flex-direction: $direction-column;
+flex-wrap: $flex-wrap;
+}

@@ -9,6 +9,8 @@ header {
     }
     
     .nav__ul{
+        max-width: 1200px;
+        margin: auto;
         .ul__li{
             .nav__item{
                 margin: $small;

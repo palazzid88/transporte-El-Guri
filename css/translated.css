@@ -16,9 +16,12 @@ body {
 
 /*### VARIABLES ###*/
 /*Margin & padding & gap*/
+/*Flex*/
 /*MAPS - banner in izaje.scss*/
 /*### FIN VARIABLES ###*/
 /*mixin aplicado a mudanza*/
+/*MARGIN & PADDING SMALL*/
+/*MIXIN FLEX*/
 /*PARTIALS*/
 /*HEADER*/
 header .navegador {
@@ -27,21 +30,22 @@ header .navegador {
 header .header-nav {
   max-width: 1200px; }
 
-header .nav__ul .ul__li .nav__item {
-  margin: 10px; }
-
-header .nav__ul .ul__li .nav__link {
-  font-size: 15px;
-  padding: 5px;
-  color: red;
-  border: 3px solid white;
-  border-radius: 5px;
-  transition: border 1s; }
-
-header .nav__ul .ul__li .nav__link:hover {
-  border-color: red;
-  color: white;
-  background-color: red; }
+header .nav__ul {
+  max-width: 1200px;
+  margin: auto; }
+  header .nav__ul .ul__li .nav__item {
+    margin: 10px; }
+  header .nav__ul .ul__li .nav__link {
+    font-size: 15px;
+    padding: 5px;
+    color: red;
+    border: 3px solid white;
+    border-radius: 5px;
+    transition: border 1s; }
+  header .nav__ul .ul__li .nav__link:hover {
+    border-color: red;
+    color: white;
+    background-color: red; }
 
 .header__nav {
   max-width: 1200px;
@@ -145,9 +149,12 @@ header .nav__ul .ul__li .nav__link:hover {
   border: solid 1px black; }
 
 .main-subtitulo {
+  max-width: 1200px;
+  margin: auto;
   color: white;
   background-color: red;
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 10px;
   text-align: center; }
 
@@ -190,29 +197,17 @@ header .nav__ul .ul__li .nav__link:hover {
       color: black;
       font-size: 25px;
       margin: 10px;
-      padding: 10px;
-      /* color: $font-color1;
-                    font-size: $font-size-h1;
-                    margin: $small;
-                    padding: $small;*/ }
+      padding: 10px; }
     #container .article-mudanza .card .servicios-article .subtitle-article {
       color: red;
       font-size: 20px;
       margin: 10px;
-      padding: 10px;
-      /*color: $font-color3;
-                    font-size: $font-size-h2;
-                    margin: $small;
-                    padding: $small;*/ }
+      padding: 10px; }
     #container .article-mudanza .card .servicios-article .parraph-article {
       color: black;
       font-size: 15px;
       margin: 10px;
-      padding: 10px;
-      /* color: $font-color1;
-                    font-size: $font-size-h3;
-                    margin: $small;
-                    padding: $small;*/ }
+      padding: 10px; }
 
 /* ###  FIN MUDANZAS.HTML ### */
 /*## IZAJE.HTML ##*/
@@ -296,6 +291,9 @@ header .nav__ul .ul__li .nav__link:hover {
   margin: auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  /*   display: flex;
+    flex-direction: column;*/
   gap: 20px;
   justify-content: center;
   flex-grow: 1;
@@ -349,6 +347,33 @@ header .nav__ul .ul__li .nav__link:hover {
 .container .contact .contact__maps .img-mps {
   max-width: 100%; }
 
+.container .section__attention {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  display: flex;
+  align-items: center; }
+  .container .section__attention .attention_img {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px; }
+    .container .section__attention .attention_img .img-att {
+      width: 100%; }
+  .container .section__attention .attention__info .attention-subtitulo {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: red; }
+  .container .section__attention .attention__info .attention-p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: black; }
+
 .container .section__redes {
   display: flex;
   flex-direction: row;
@@ -401,7 +426,12 @@ header .nav__ul .ul__li .nav__link:hover {
     height: 70px;
     position: fixed;
     left: 80%;
-    top: 85%; } }
+    top: 85%; }
+  .section__attention {
+    display: flex;
+    flex-wrap: wrap; }
+    .section__attention .attention_img {
+      width: 100%; } }
 
 /*## MEDIA 480-679 ##*/
 @media screen and (min-width: 480px) and (max-width: 679px) {
@@ -489,6 +519,11 @@ header .nav__ul .ul__li .nav__link:hover {
       font-size: 15px; }
     .info-habilitacion .info__habilitacion .link__habilitacion {
       font-size: 8px; }
+  .section__attention {
+    display: flex;
+    flex-wrap: wrap; }
+    .section__attention .attention_img {
+      width: 100%; }
   .info-pago .card__pago {
     width: 100%; }
     .info-pago .card__pago .picture__pago {

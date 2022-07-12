@@ -18,8 +18,7 @@
         justify-content: center;
         margin: auto;
         .card{
-            margin: $small;
-            padding: $small;
+            @include normal($small, $small);            
             .card-img{
                 .picture-img{
                     width: 100%;
@@ -28,24 +27,12 @@
             .servicios-article{
                 .title-article{
                     @include article($font-color1, $font-size-h1, $small, $small)
-                   /* color: $font-color1;
-                    font-size: $font-size-h1;
-                    margin: $small;
-                    padding: $small;*/
                     }                                   
                 .subtitle-article{
-                    @include article($font-color3, $font-size-h2, $small, $small)
-                    /*color: $font-color3;
-                    font-size: $font-size-h2;
-                    margin: $small;
-                    padding: $small;*/
+                    @include article($font-color3, $font-size-h2, $small, $small)   
                     }
                 .parraph-article{
-                    @include article($font-color1, $font-size-h3, $small, $small)
-                   /* color: $font-color1;
-                    font-size: $font-size-h3;
-                    margin: $small;
-                    padding: $small;*/
+                    @include article($font-color1, $font-size-h3, $small, $small)                   
                     }
             }
         }

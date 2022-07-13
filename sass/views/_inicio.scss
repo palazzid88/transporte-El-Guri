@@ -1,3 +1,7 @@
+
+
+
+
 /*### INICIO.HTML ###*/
 
 .carousel-boot{
@@ -13,12 +17,10 @@
         max-width: 1200px;
         margin: auto;
         padding: $small;
-        display: flex;
-        flex-direction: row;
+        @include flex($display, $direction-row, none);
         .info__habilitacion{
             margin: auto;
-            display: flex;
-            flex-direction: column;
+            @include flex($display,$direction-column, none);
             justify-content: center;
             align-items: center;
             margin-top: 20px;
@@ -36,9 +38,9 @@
 .info-pago{
     margin: auto;
     padding: $small;
-    display: flex;
-    flex-direction: column;
+    @include flex($display, $direction-column, none);
     .info-pago__subtitle{
+        @include font($font-principal, $style);
         margin: auto;
         padding: 10px, 20px;
         padding: $medium;
@@ -55,8 +57,7 @@
         max-width: 1200px;
         width: 100%;
         background-color: $color-secundary;
-        display: flex;
-        flex-direction: column;
+        @include flex($display, $direction-column, none);
         margin: auto;
         }
         .picture__pago{
@@ -85,6 +86,7 @@
     }
 
 .main-subtitulo{
+    @include font($font-principal, $style);
     max-width: 1200px;
     margin: auto;
     color: $color-secundary;

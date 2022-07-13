@@ -1,3 +1,7 @@
+
+
+
+
 /* ###  MUDANZAS.HTML ### */
 
 #container{
@@ -26,13 +30,16 @@
             }
             .servicios-article{
                 .title-article{
-                    @include article($font-color1, $font-size-h1, $small, $small)
+                    @include article($font-color1, $font-size-h1, $small, $small);
+                    @include font($font-principal, $style);
                     }                                   
                 .subtitle-article{
-                    @include article($font-color3, $font-size-h2, $small, $small)   
+                    @include article($font-color3, $font-size-h2, $small, $small);
+                    @include font($font-principal, $style);
+  
                     }
                 .parraph-article{
-                    @include article($font-color1, $font-size-h3, $small, $small)                   
+                    @include article($font-color1, $font-size-h3, $small, $small);                                
                     }
             }
         }

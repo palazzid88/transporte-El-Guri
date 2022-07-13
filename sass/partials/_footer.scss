@@ -1,14 +1,21 @@
-    /*FOOTER*/
+ 
+ 
+ 
+ 
+  /*### FOOTER ###*/
 
 .footer{
+    font-family: $font-secundary;
     max-width: 1200px;
-    font-size: $font-size-p;
+    font-size: $font-size-h3;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    @include flex($display, $direction-column, none);
     gap: 10px;
     padding: $largue;
     background-color: $color-footer;
     color: white;
     text-align: center;
 }
+
+
+/*###  FIN FOOTER ###*/

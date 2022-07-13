@@ -2,9 +2,8 @@
 * {
   margin: 0%;
   padding: 0%;
-  font-family: 'cooper-black-std',serif, 'Roboto', sans-serif;
-  font-weight: 400;
-  font-style: normal; }
+  /*   font-family: cooper-black-std,serif;
+    font-style: normal;*/ }
 
 body {
   width: 100%;
@@ -15,6 +14,7 @@ body {
   background-attachment: fixed; }
 
 /*### VARIABLES ###*/
+/*## FUENTES ##*/
 /*Margin & padding & gap*/
 /*Flex*/
 /*MAPS - banner in izaje.scss*/
@@ -23,35 +23,37 @@ body {
 /*MARGIN & PADDING SMALL*/
 /*MIXIN FLEX*/
 /*PARTIALS*/
-/*HEADER*/
-header .navegador {
-  background-color: white; }
-
-header .header-nav {
-  max-width: 1200px; }
-
-header .nav__ul {
-  max-width: 1200px;
-  margin: auto; }
-  header .nav__ul .ul__li .nav__item {
-    margin: 10px; }
-  header .nav__ul .ul__li .nav__link {
-    font-size: 15px;
-    padding: 5px;
-    color: red;
-    border: 3px solid white;
-    border-radius: 5px;
-    transition: border 1s; }
-  header .nav__ul .ul__li .nav__link:hover {
-    border-color: red;
-    color: white;
-    background-color: red; }
+/*### HEADER ###*/
+header {
+  font-family: cooper-black-std, serif;
+  font-style: normal; }
+  header .navegador {
+    background-color: white; }
+  header .header-nav {
+    max-width: 1200px; }
+  header .nav__ul {
+    max-width: 1200px;
+    margin: auto; }
+    header .nav__ul .ul__li .nav__item {
+      margin: 10px; }
+    header .nav__ul .ul__li .nav__link {
+      font-size: 15px;
+      padding: 5px;
+      color: red;
+      border: 3px solid white;
+      border-radius: 5px;
+      transition: border 1s; }
+    header .nav__ul .ul__li .nav__link:hover {
+      border-color: red;
+      color: white;
+      background-color: red; }
 
 .header__nav {
   max-width: 1200px;
   margin: auto;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: none; }
   .header__nav .nav__logo {
     width: 200px; }
   .header__nav .main-titulo {
@@ -63,19 +65,23 @@ header .nav__ul {
     box-shadow: 6px 10px 10px black;
     text-align: center; }
 
-/*FOOTER*/
+/*### FIN HEADER ###*/
+/*### FOOTER ###*/
 .footer {
+  font-family: "Mulish", sans-serif;
   max-width: 1200px;
-  font-size: 12px;
+  font-size: 17px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   gap: 10px;
   padding: 20px;
   background-color: black;
   color: white;
   text-align: center; }
 
+/*###  FIN FOOTER ###*/
 /*VIEWS*/
 /*### INICIO.HTML ###*/
 .carousel-boot {
@@ -92,11 +98,13 @@ header .nav__ul {
   margin: auto;
   padding: 10px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-wrap: none; }
   .info-habilitacion .info__habilitacion {
     margin: auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -110,8 +118,11 @@ header .nav__ul {
   margin: auto;
   padding: 10px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  flex-wrap: none; }
   .info-pago .info-pago__subtitle {
+    font-family: cooper-black-std, serif;
+    font-style: normal;
     margin: auto;
     padding: 10px, 20px;
     padding: 15px;
@@ -128,6 +139,7 @@ header .nav__ul {
     background-color: white;
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
     margin: auto; }
   .info-pago .picture__pago {
     margin: auto;
@@ -149,6 +161,8 @@ header .nav__ul {
   border: solid 1px black; }
 
 .main-subtitulo {
+  font-family: cooper-black-std, serif;
+  font-style: normal;
   max-width: 1200px;
   margin: auto;
   color: white;
@@ -197,27 +211,26 @@ header .nav__ul {
       color: black;
       font-size: 25px;
       margin: 10px;
-      padding: 10px; }
+      padding: 10px;
+      font-family: cooper-black-std, serif;
+      font-style: normal; }
     #container .article-mudanza .card .servicios-article .subtitle-article {
       color: red;
       font-size: 20px;
       margin: 10px;
-      padding: 10px; }
+      padding: 10px;
+      font-family: cooper-black-std, serif;
+      font-style: normal; }
     #container .article-mudanza .card .servicios-article .parraph-article {
       color: black;
-      font-size: 15px;
+      font-size: 17px;
       margin: 10px;
       padding: 10px; }
 
 /* ###  FIN MUDANZAS.HTML ### */
 /*## IZAJE.HTML ##*/
-/*
-.main-izaje{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-*/
 .container .info__izaje {
+  font-size: 17px;
   margin: 10px;
   margin-bottom: 40px;
   padding: 10px;
@@ -292,8 +305,6 @@ header .nav__ul {
   display: flex;
   flex-direction: column;
   flex-wrap: none;
-  /*   display: flex;
-    flex-direction: column;*/
   gap: 20px;
   justify-content: center;
   flex-grow: 1;
@@ -309,9 +320,11 @@ header .nav__ul {
     border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
     gap: 10px;
     justify-content: center; }
     .main-nosotros__flex .nosotros-cabecera__flex .main-parrafo {
+      font-size: 17px;
       margin: 10px;
       padding: 10px; }
   .main-nosotros__flex .div-img__nosotros {
@@ -328,6 +341,7 @@ header .nav__ul {
 /*## FIN NOSOTROS.HTML ##*/
 /*### CONTACTO.HTML ###*/
 .container .contact .contact__form .form__label {
+  font-size: 17px;
   color: red; }
 
 .container .contact .btn-submit {
@@ -366,12 +380,14 @@ header .nav__ul {
   .container .section__attention .attention__info .attention-subtitulo {
     margin: 10px;
     padding: 10px;
+    font-family: cooper-black-std, serif;
+    font-style: normal;
     font-size: 20px;
     color: red; }
   .container .section__attention .attention__info .attention-p {
     margin: 10px;
     padding: 10px;
-    font-size: 12px;
+    font-size: 17px;
     color: black; }
 
 .container .section__redes {
@@ -399,7 +415,7 @@ header .nav__ul {
 
 /*### FIN CONTACTO.HTML ###*/
 /*### MEDIAQUERIES ###*/
-/*## MEDIA 680-840 ##*/
+/*## MEDIA 680px-840px ##*/
 @media screen and (min-width: 680px) and (max-width: 840px) {
   .ul-flex {
     font-size: 20px;
@@ -419,7 +435,8 @@ header .nav__ul {
     flex-grow: 1; }
   .section-article1, .section-article2, .section-article3, .section-article4 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: none; }
   .presupuesto-btn {
     font-size: 20px; }
   .main-wtp {
@@ -429,22 +446,23 @@ header .nav__ul {
     top: 85%; }
   .section__attention {
     display: flex;
+    flex-direction: none;
     flex-wrap: wrap; }
     .section__attention .attention_img {
       width: 100%; } }
 
-/*## MEDIA 480-679 ##*/
+/*## MEDIA 480px-679px ##*/
 @media screen and (min-width: 480px) and (max-width: 679px) {
   .ul-flex {
-    font-size: 15px;
+    font-size: 17px;
     gap: 10px; }
   .nav-flex {
-    font-size: 15px;
+    font-size: 17px;
     flex-direction: column-reverse;
     align-items: center;
     margin-bottom: 40px; }
   .main-titulo {
-    font-size: 15px; }
+    font-size: 17px; }
   .grid-container {
     width: 100%;
     margin: 0 auto;
@@ -457,14 +475,15 @@ header .nav__ul {
     flex-grow: 1; }
   .section-article1, .section-article2, .section-article3, .section-article4 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: none; }
   .main-wtp {
-    height: 50px;
+    height: 70px;
     position: fixed;
     left: 70%;
     top: 75%; } }
 
-/*## MEDIA 300-479 ##*/
+/*## MEDIA 300px-479px ##*/
 @media screen and (min-width: 300px) and (max-width: 479px) {
   .ul-flex {
     padding: 15px 0px;
@@ -481,8 +500,8 @@ header .nav__ul {
     width: 120px; }
   .header__nav .main-titulo {
     font-size: 12px;
-    padding: 10px;
-    margin: 20px; }
+    margin: 20px;
+    padding: 10px; }
   .presupuesto-btn {
     margin: 40px auto;
     padding: 10px; }
@@ -516,11 +535,12 @@ header .nav__ul {
     .info-habilitacion .info__habilitacion .img__habilitacion {
       width: 100%; }
     .info-habilitacion .info__habilitacion .info__p {
-      font-size: 15px; }
+      font-size: 17px; }
     .info-habilitacion .info__habilitacion .link__habilitacion {
       font-size: 8px; }
   .section__attention {
     display: flex;
+    flex-direction: none;
     flex-wrap: wrap; }
     .section__attention .attention_img {
       width: 100%; }
@@ -530,7 +550,8 @@ header .nav__ul {
       width: 100%;
       margin: auto;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      flex-wrap: none; }
       .info-pago .card__pago .picture__pago .img__pago {
         width: 100%; }
   .presupuesto-btn {
@@ -539,17 +560,19 @@ header .nav__ul {
   .h2-btn {
     font-size: 10px; }
   .footer p {
-    font-size: 8px; }
+    font-size: 12px; }
   .grid-container {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: none; }
   .section-article1, .section-article2, .section-article3, .section-article4 {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    flex-wrap: none; }
   .main-wtp {
-    height: 30px;
+    height: 50px;
     position: fixed;
     left: 70%;
     top: 85%; }
@@ -569,6 +592,7 @@ header .nav__ul {
     margin: 100px auto;
     display: flex;
     flex-direction: column;
+    flex-wrap: none;
     justify-content: space-around;
     align-items: center; }
   .post-flex {
@@ -578,3 +602,5 @@ header .nav__ul {
     margin-bottom: 20px; }
   .img-maps {
     width: 100%; } }
+
+/*### FIN MIXINS ###*/

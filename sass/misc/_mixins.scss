@@ -26,3 +26,8 @@ display: $display;
 flex-direction: $direction-column;
 flex-wrap: $flex-wrap;
 }
+
+@mixin font($font, $style){
+font-family: $font;
+font-style: $style;
+}

@@ -1,6 +1,11 @@
 
-    /*HEADER*/
+
+
+
+/*### HEADER ###*/
 header {
+    @include font($font-principal, $style);                               
+
     .navegador{
         background-color: white;
     }
@@ -35,8 +40,7 @@ header {
 .header__nav{
     max-width: 1200px;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    @include flex($display, $direction-row, none);
     .nav__logo{
         width: 200px;
         }
@@ -50,3 +54,6 @@ header {
         text-align: center;
     }
 }
+
+
+/*### FIN HEADER ###*/

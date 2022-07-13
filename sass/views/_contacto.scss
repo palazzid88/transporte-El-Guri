@@ -1,3 +1,7 @@
+
+
+
+
 /*### CONTACTO.HTML ###*/
 
 
@@ -5,6 +9,7 @@
     .contact{
         .contact__form{
             .form__label{
+                font-size: $font-size-h3;
                 color: $font-color3;
             }
         }
@@ -52,21 +57,20 @@
         .attention__info{
             .attention-subtitulo{
                 @include normal($small, $small);
+                @include font($font-principal, $style);
                 font-size: $font-size-h2;
                 color: $font-color3;                
             }
             .attention-p{
                 @include normal($small, $small);                
-                font-size: $font-size-p;
+                font-size: $font-size-h3;
                 color: $font-color1;
             }
         }
     
     }
     .section__redes{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @include flex($display, $direction-row, $flex-wrap);
         margin: auto;
         margin-top: $largue;
         margin-bottom: $largue;
